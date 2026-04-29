@@ -5,7 +5,7 @@ import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { mainLinks } from "./links";
+import { examLinks } from "./links";
 
 export default function NavBar() {
     const pathname = usePathname();
@@ -54,7 +54,7 @@ export default function NavBar() {
 
                     {/* --- DESKTOP LINKS (Restored) --- */}
                     <div className="hidden md:flex gap-8">
-                        {mainLinks.map((link) => (
+                        {examLinks.map((link) => (
                             <Link
                                 key={link.href}
                                 href={link.href}
@@ -84,7 +84,7 @@ export default function NavBar() {
                     }`}
             >
                 <div className="flex flex-col items-center justify-center h-full gap-10">
-                    {mainLinks.map((link) => (
+                    {examLinks.map((link) => (
                         <a
                             key={link.href}
                             href={link.href}
