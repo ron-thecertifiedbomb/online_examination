@@ -22,18 +22,28 @@ export default function StartExamPage({ exam, categorySlug }: StartExamPageProps
         setIsLoading(true);
 
         try {
-            // 1. Verify the student exists in the database
+            // 1. Verify the student exists in the database before initializing an attempt
             const studentRes = await fetch(`/api/students/${encodeURIComponent(studentId)}`);
             if (!studentRes.ok) {
                 setIsLoading(false);
                 return alert("Student ID not found. Please check your credentials.");
             }
 
-            // 2. Generate a local attempt ID (mocking a 24-character MongoDB ObjectId)
-            const localAttemptId = [...Array(24)].map(() => Math.floor(Math.random() * 16).toString(16)).join('');
+            // 2. Call the new API route to initialize the exam attempt
+            const initAttemptRes = await fetch('/api/attempts/initialize', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    examId: exam._id,
+                    studentId: studentId,
+                    startTime: new Date().toISOString()
+                })
+            });
+            if (!initAttemptRes.ok) throw new Error('Failed to initialize exam attempt');
+            const initAttemptData = await initAttemptRes.json();
 
-            // 3. We push to the revised [category]/[examId]/[attemptId] route structure
-            router.push(`/exams/${categorySlug}/${exam._id}/${localAttemptId}?studentId=${encodeURIComponent(studentId)}`);
+            // 3. We push to the revised [category]/[examId]/[attemptId] route structure with the new attemptId
+            router.push(`/exams/${categorySlug}/${exam._id}/${initAttemptData.attemptId}?studentId=${encodeURIComponent(studentId)}`);
         } catch (error) {
             console.error("Lizard Engine Error:", error);
             setIsLoading(false);
@@ -44,7 +54,7 @@ export default function StartExamPage({ exam, categorySlug }: StartExamPageProps
         <ScreenContainer >
             <div className="max-w-md m-auto w-full p-10 border border-zinc-200 rounded-3xl bg-white shadow-xl shadow-zinc-200/50 ">
                 <div className="flex flex-col items-center text-center mb-8">
-          
+
                     <h1 className="text-3xl font-black text-zinc-900 leading-tight uppercase">
                         {exam.title}
                     </h1>
