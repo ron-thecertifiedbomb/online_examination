@@ -1,92 +1,72 @@
-'use client'
-
+'use client';
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-
-import MetaHead from "@/components/MetaHead/MetaHead";
 import ScreenContainer from "@/components/shared/ScreenContainer/ScreenContainer";
-import PresentationSection from "@/components/shared/PresentationSection/PresentationSection";
-import { homeContent } from "@/data/page/homeContent";
-import { lizardContent } from "@/data/page/lizardContent";
-import { utilities } from "@/data/lists/utilities";
-import { FramerPresentation } from "@/components/FramerPresentation/FramerPresentation";
 
-
-// Get featured tools (specific tools you want to highlight)
-const featuredTools = utilities.filter(tool =>
-  ["text-tools", "qrcode-generator", "password-generator", "json-formatter",
-    "unit-converter", "speed-test", "base64-tool", "video-to-gif", "pagespeed-insights"].includes(tool.slug)
-);
-
-export default function HomePage() {
-  const seoEntry = homeContent.find((item) => item.type === "seo");
-
+export default function ExamHomePage() {
   return (
-    <>
-      <MetaHead
-        data={{
-          title: seoEntry?.data?.title || "Lizard Interactive Online",
-          description: seoEntry?.data?.description || "Free online tools for developers, designers, and creators.",
-          ogImage: seoEntry?.data?.ogImage || "/og-image-homepage.jpg",
-          ogUrl: "https://lizardinteractive.online",
-          ogType: "website",
-        }}
-      />
+    <ScreenContainer className="pt-24 pb-12 flex flex-col items-center justify-center min-h-[80vh]">
+      {/* Hero Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="text-center max-w-3xl m-auto"
+      >
+        <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-white mb-6">
+          Secure <span className="text-green-500">Proctoring</span> &
+          Exam Engine
+        </h1>
+        <p className="text-lg text-gray-400 mb-10 leading-relaxed">
+          Engineered for high-integrity certifications. Featuring real-time tab-monitoring,
+          instant MongoDB state persistence, and sub-100ms response times.
+        </p>
 
-      <ScreenContainer className="pt-24">
-        <FramerPresentation />
-       
-        <div className="mt-24 mb-12 px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <h2 className="text-2xl font-black uppercase tracking-tighter text-center mb-2  text-emerald-500">
-              FREE ONLINE TOOLS
-            </h2>
-            <p className="text-center text-zinc-300 text-sm font-mono mb-15 uppercase">
-              Professional utilities for developers, designers, and creators
-            </p>
+        {/* Action Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <Link href="/engineering/exams/start">
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="px-8 py-4 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition-colors"
+            >
+              Start Entrance Exam
+            </motion.button>
+          </Link>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-              {featuredTools.map((tool, index) => (
-                <motion.div
-                  key={tool.slug}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                >
-                  <Link
-                    href={`/utilities/${tool.slug}`}
-                    className="group block p-4 rounded-2xl bg-zinc-950 border border-zinc-900 hover:border-emerald-500/50 transition-all duration-300 hover:scale-105"
-                  >
-                    <div className="text-3xl mb-2">{tool.icon}</div>
-                    <h3 className="font-black text-white text-sm uppercase tracking-wider mb-1">
-                      {tool.name}
-                    </h3>
-                    <p className="text-[10px] font-mono text-zinc-500 line-clamp-2">
-                      {tool.description}
-                    </p>
-                  </Link>
-                </motion.div>
-              ))}
-            </div>
-
-            {/* View All Link */}
-            <div className="text-center mt-8">
-              <Link
-                href="/utilities"
-                className="inline-flex items-center gap-2 px-6 py-2 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-emerald-500 hover:border-emerald-500/50 transition text-xs font-mono uppercase tracking-wider"
-              >
-                View All {utilities.length} Tools →
-              </Link>
-            </div>
-          </motion.div>
+          <Link href="/engineering/toolkit">
+            <motion.button
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              className="px-8 py-4 border border-gray-700 text-white font-semibold rounded-lg hover:bg-gray-900 transition-colors"
+            >
+              Back to Toolkit
+            </motion.button>
+          </Link>
         </div>
-  
-      </ScreenContainer>
-    </>
+      </motion.div>
+
+      {/* Feature Highlights */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.4, duration: 1 }}
+        className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 w-full"
+      >
+        <div className="p-6 rounded-xl border border-gray-800 bg-gray-900/50">
+          <h3 className="text-green-500 font-bold mb-2">Anti-Cheat</h3>
+          <p className="text-sm text-gray-400">Automatic detection of tab-switching and window-blurring events.</p>
+        </div>
+        <div className="p-6 rounded-xl border border-gray-800 bg-gray-900/50">
+          <h3 className="text-green-500 font-bold mb-2">Instant Save</h3>
+          <p className="text-sm text-gray-400">Progress is synced to your lizard_core MongoDB cluster in real-time.</p>
+        </div>
+        <div className="p-6 rounded-xl border border-gray-800 bg-gray-900/50">
+          <h3 className="text-green-500 font-bold mb-2">Auto-Grading</h3>
+          <p className="text-sm text-gray-400">Server-side logic calculates results immediately upon submission.</p>
+        </div>
+      </motion.div>
+    </ScreenContainer>
   );
 }
