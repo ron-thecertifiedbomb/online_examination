@@ -1,6 +1,7 @@
-import React from "react";
+import { MongoClient } from 'mongodb';
 import { GetServerSideProps } from "next";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import ScreenContainer from "@/components/shared/ScreenContainer/ScreenContainer";
 
 type Exam = {
@@ -8,71 +9,100 @@ type Exam = {
     title: string;
     slug: string;
     description: string;
-    durationMinutes: number;
-    status: string;
 };
 
-export default function TeacherDashboard({ exams }: { exams: Exam[] }) {
+export default function ExamHomePage({ exams }: { exams: Exam[] }) {
     return (
-        <ScreenContainer >
-            <div className="flex justify-between items-end mb-10">
-                <div>
-                    <h1 className="text-3xl font-black tracking-tight text-zinc-900">
-                        ENGINEERING <span className="text-emerald-600">HUB</span>
-                    </h1>
-                    <p className="text-sm text-zinc-500 uppercase tracking-widest mt-1">
-                        Exam Management Control
-                    </p>
+        <ScreenContainer>
+            {/* Hero Section */}
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="text-center max-w-3xl m-auto"
+            >
+                <h1 className="text-4xl md:text-6xl font-black tracking-tight text-zinc-900 mb-6 uppercase">
+                    Secure <span className="text-emerald-600">Proctoring</span> &
+                    Exam Engine
+                </h1>
+
+                <p className="text-lg text-zinc-500 mb-10 leading-relaxed max-w-2xl mx-auto">
+                    High-integrity certifications featuring real-time tab-monitoring and
+                    instant MongoDB state persistence. Select an assessment below to initialize.
+                </p>
+
+                {/* DYNAMIC EXAM SELECTION */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center mb-12">
+                    {exams.map((exam) => (
+                        <Link key={exam._id} href={`/engineering/exams/${exam.slug}`}>
+                            <motion.div
+                                whileHover={{ scale: 1.02, borderColor: '#10b981' }}
+                                whileTap={{ scale: 0.98 }}
+                                className=" min-h-30 p-6 border-2 border-zinc-100 bg-white rounded-2xl text-left cursor-pointer transition-all shadow-sm group"
+                            >
+                                <h3 className="font-black text-zinc-900 group-hover:text-emerald-600 transition-colors uppercase tracking-tight">
+                                    {exam.title}
+                                </h3>
+                                <p className="text-xs text-zinc-400 mt-1 uppercase font-bold tracking-widest">
+                                    Initialize Assessment →
+                                </p>
+                            </motion.div>
+                        </Link>
+                    ))}
                 </div>
 
-                <button className="bg-emerald-600 text-white px-6 py-2 rounded-lg font-bold text-sm hover:bg-emerald-700 transition-all shadow-sm">
-                    CREATE NEW EXAM
-                </button>
-            </div>
+                {/* Secondary Actions */}
+                <div className="flex justify-center border-t border-zinc-100 pt-8">
+                    <Link href="/toolkit">
+                        <button className="text-sm font-bold text-zinc-400 hover:text-zinc-900 transition-colors uppercase tracking-[0.2em]">
+                            ← Back to Toolkit
+                        </button>
+                    </Link>
+                </div>
+            </motion.div>
 
-            {/* THE GRID */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {exams.map((exam) => (
-                    <div key={exam._id} className="bg-white border border-zinc-200 rounded-xl p-6 hover:border-emerald-300 transition-all shadow-sm group">
-                        <div className="flex justify-between items-start mb-4">
-                            <span className="text-[10px] font-bold tracking-widest text-emerald-600 bg-emerald-50 px-2 py-1 rounded uppercase">
-                                {exam.status}
-                            </span>
-                            <span className="text-xs text-zinc-400 font-medium">
-                                {exam.durationMinutes} MINS
-                            </span>
-                        </div>
-
-                        <h2 className="text-xl font-bold text-zinc-900 mb-2 group-hover:text-emerald-600 transition-colors">
-                            {exam.title}
-                        </h2>
-                        <p className="text-sm text-zinc-500 mb-6 line-clamp-2 italic">
-                            "{exam.description}"
-                        </p>
-
-                        <div className="flex gap-3">
-                            <Link href={`/engineering/exams/${exam.slug}`} className="flex-1">
-                                <button className="w-full py-2 border border-zinc-200 text-zinc-700 text-xs font-bold rounded-lg hover:bg-zinc-50 transition-all">
-                                    VIEW QUESTIONS
-                                </button>
-                            </Link>
-                            <button className="px-4 py-2 bg-zinc-900 text-white text-xs font-bold rounded-lg hover:bg-black transition-all">
-                                ANALYTICS
-                            </button>
-                        </div>
-                    </div>
-                ))}
-            </div>
+            {/* Feature Highlights */}
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.4, duration: 1 }}
+                className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 w-full"
+            >
+                <div className="p-8 rounded-2xl border border-zinc-200 bg-white shadow-sm">
+                    <h3 className="text-emerald-600 font-black text-xs uppercase tracking-widest mb-3">Anti-Cheat</h3>
+                    <p className="text-sm text-zinc-500 leading-relaxed italic">"Detection of tab-switching and window-blurring events."</p>
+                </div>
+                <div className="p-8 rounded-2xl border border-zinc-200 bg-white shadow-sm">
+                    <h3 className="text-emerald-600 font-black text-xs uppercase tracking-widest mb-3">Instant Save</h3>
+                    <p className="text-sm text-zinc-500 leading-relaxed italic text-balance">"Progress is synced to lizrd_core MongoDB cluster in real-time."</p>
+                </div>
+                <div className="p-8 rounded-2xl border border-zinc-200 bg-white shadow-sm">
+                    <h3 className="text-emerald-600 font-black text-xs uppercase tracking-widest mb-3">Auto-Grading</h3>
+                    <p className="text-sm text-zinc-500 leading-relaxed italic">"Server-side logic calculates results immediately upon submission."</p>
+                </div>
+            </motion.div>
         </ScreenContainer>
     );
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-    // Fetching from your own API route
-    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/exams`);
-    const exams = await res.json();
+    const client = new MongoClient(process.env.MONGODB_URI!);
+    try {
+        await client.connect();
+        const db = client.db('lizrd_core');
+        const exams = await db.collection('exams')
+            .find({ status: 'published' })
+            .project({ title: 1, slug: 1, description: 1 })
+            .toArray();
 
-    return {
-        props: { exams },
-    };
+        return {
+            props: {
+                exams: JSON.parse(JSON.stringify(exams)),
+            },
+        };
+    } catch (error) {
+        return { props: { exams: [] } };
+    } finally {
+        await client.close();
+    }
 };
