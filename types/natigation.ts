@@ -30,19 +30,19 @@ export const mainLinks: NavLink[] = [
 
 export const examLinks: NavLink[] = [
   {
-    href: "/engineering/exams",
+    href: "/exams",
     label: "EXAM CENTER", // Changed from Dashboard
   },
   {
-    href: "/engineering/exams/schedule",
+    href: "/exams/schedule",
     label: "PLANNER", // Changed from Schedule
   },
   {
-    href: "/engineering/exams/results",
+    href: "/exams/results",
     label: "GRADES", // Changed from Results
   },
   {
-    href: "/engineering/exams/profile",
+    href: "/exams/profile",
     label: "PROCTOR LOGS", // Changed from Student ID to focus on the teacher's task
   },
 ];

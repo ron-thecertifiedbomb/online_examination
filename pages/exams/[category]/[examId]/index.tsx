@@ -8,9 +8,10 @@ import ScreenContainer from "../../../../components/shared/ScreenContainer/Scree
 // It's a good practice to have a specific type for the props
 interface StartExamPageProps {
     exam: WithId<Document>;
+    categorySlug: string;
 }
 
-export default function StartExamPage({ exam }: StartExamPageProps) {
+export default function StartExamPage({ exam, categorySlug }: StartExamPageProps) {
     const router = useRouter();
     const [studentId, setStudentId] = useState("");
     const [isLoading, setIsLoading] = useState(false);
@@ -31,8 +32,8 @@ export default function StartExamPage({ exam }: StartExamPageProps) {
             // 2. Generate a local attempt ID (mocking a 24-character MongoDB ObjectId)
             const localAttemptId = [...Array(24)].map(() => Math.floor(Math.random() * 16).toString(16)).join('');
 
-            // 3. We push to the new [examId]/[attemptId] route structure
-            router.push(`/engineering/exams/${exam._id}/${localAttemptId}?studentId=${encodeURIComponent(studentId)}`);
+            // 3. We push to the revised [category]/[examId]/[attemptId] route structure
+            router.push(`/exams/${categorySlug}/${exam._id}/${localAttemptId}?studentId=${encodeURIComponent(studentId)}`);
         } catch (error) {
             console.error("Lizard Engine Error:", error);
             setIsLoading(false);
@@ -43,9 +44,7 @@ export default function StartExamPage({ exam }: StartExamPageProps) {
         <ScreenContainer >
             <div className="max-w-md m-auto w-full p-10 border border-zinc-200 rounded-3xl bg-white shadow-xl shadow-zinc-200/50 ">
                 <div className="flex flex-col items-center text-center mb-8">
-                    <span className="text-[10px] font-black tracking-[0.4em] text-emerald-600 uppercase mb-2">
-                        System Protocol 04
-                    </span>
+          
                     <h1 className="text-3xl font-black text-zinc-900 leading-tight uppercase">
                         {exam.title}
                     </h1>
@@ -94,7 +93,7 @@ export default function StartExamPage({ exam }: StartExamPageProps) {
 }
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-    const { examId: id } = context.params as { examId: string };
+    const { category, examId: id } = context.params as { category: string, examId: string };
     const client = new MongoClient(process.env.MONGODB_URI!);
 
     try {
@@ -111,7 +110,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
         if (!exam) return { notFound: true };
 
-        return { props: { exam: JSON.parse(JSON.stringify(exam)) } };
+        return { props: { exam: JSON.parse(JSON.stringify(exam)), categorySlug: category } };
     } catch (e) {
         return { notFound: true };
     } finally {

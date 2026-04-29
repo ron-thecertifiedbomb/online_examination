@@ -22,14 +22,14 @@ export default function ExamHomePage({ exams = [] }: { exams: Exam[] }) {
         transition={{ duration: 0.5 }}
         className="text-center max-w-3xl m-auto"
       >
-        <h1 className="text-4xl md:text-6xl font-black tracking-tight text-zinc-900 mb-6 uppercase">
-          Secure <span className="text-emerald-600">Proctoring</span> &
-          Exam Engine
+        <h1 className="text-4xl md:text-6xl font-black tracking-tighter text-zinc-900 mb-6 uppercase leading-[0.9]">
+          Secure <span className="text-emerald-600">Proctoring</span> <br />
+          & Exam Engine
         </h1>
 
-        <p className="text-lg text-zinc-500 mb-10 leading-relaxed max-w-2xl mx-auto">
-          High-integrity certifications featuring real-time tab-monitoring and
-          instant MongoDB state persistence. Select an assessment protocol to initialize.
+        <p className="text-sm md:text-base text-zinc-500 mb-10 leading-relaxed max-w-xl mx-auto font-medium uppercase tracking-widest opacity-80">
+          High-integrity certification protocols. Equipped with <span className="text-zinc-900 font-bold">real-time tab-monitoring</span> and
+          <span className="text-zinc-900 font-bold"> instant MongoDB state persistence</span>. Initialize your assessment below.
         </p>
 
         {/* Action Buttons */}
@@ -56,27 +56,7 @@ export default function ExamHomePage({ exams = [] }: { exams: Exam[] }) {
             );
           })}
 
-          {/* NEW: Exam Categories Button - Matches "Start" buttons in size */}
-          <Link href="/exams/categories">
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="w-full sm:w-64 px-8 py-4 border-2 border-zinc-200 text-zinc-900 font-black text-sm rounded-xl hover:bg-zinc-50 transition-all uppercase tracking-widest"
-            >
-              Exam Categories
-            </motion.button>
-          </Link>
-
-          {/* Back to Toolkit - Same width for balance */}
-          <Link href="/engineering/toolkit">
-            <motion.button
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-              className="w-full sm:w-64 px-8 py-4 border-2 border-transparent text-zinc-400 font-black text-xs hover:text-zinc-900 transition-all uppercase tracking-widest"
-            >
-              ← Back to Toolkit
-            </motion.button>
-          </Link>
+  
         </div>
       </motion.div>
 
