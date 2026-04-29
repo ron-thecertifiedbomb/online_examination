@@ -6,15 +6,11 @@ import { motion } from "framer-motion";
 import ScreenContainer from "@/components/shared/ScreenContainer/ScreenContainer";
 import clientPromise from "../lib/mongodb"; // Import clientPromise
 import { Exam } from "../lib/types"; // Import Exam type from shared types
-import SEO from '@/components/shared/SEO/SEO';
 
 export default function ExamHomePage({ exams = [] }: { exams: Exam[] }) {
   return (
     <ScreenContainer>
-      <SEO
-        title="Secure Proctoring & Exam Engine"
-        url="/"
-      />
+      {/* Hero Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -66,15 +62,15 @@ export default function ExamHomePage({ exams = [] }: { exams: Exam[] }) {
         transition={{ delay: 0.4, duration: 1 }}
         className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 w-full"
       >
-        <div className="p-8 rounded-[2rem] border-2 border-zinc-100 bg-white shadow-sm">
+        <div className="p-8 rounded-4xl border-2 border-zinc-100 bg-white shadow-sm">
           <h3 className="text-emerald-600 font-black text-[10px] uppercase tracking-[0.3em] mb-3">Anti-Cheat</h3>
           <p className="text-sm text-zinc-500 italic">Detection of tab-switching and window-blurring events.</p>
         </div>
-        <div className="p-8 rounded-[2rem] border-2 border-zinc-100 bg-white shadow-sm">
+        <div className="p-8 rounded-4xl border-2 border-zinc-100 bg-white shadow-sm">
           <h3 className="text-emerald-600 font-black text-[10px] uppercase tracking-[0.3em] mb-3">Instant Save</h3>
           <p className="text-sm text-zinc-500 italic">Progress is synced to MongoDB cluster in real-time.</p>
         </div>
-        <div className="p-8 rounded-[2rem] border-2 border-zinc-100 bg-white shadow-sm">
+        <div className="p-8 rounded-4xl border-2 border-zinc-100 bg-white shadow-sm">
           <h3 className="text-emerald-600 font-black text-[10px] uppercase tracking-[0.3em] mb-3">Auto-Grading</h3>
           <p className="text-sm text-zinc-500 italic">Server-side logic calculates results immediately.</p>
         </div>

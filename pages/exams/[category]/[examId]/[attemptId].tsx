@@ -31,9 +31,7 @@ interface ExamEngineProps {
 }
 
 export default function LiveExamEngine({ category, examId, attemptId, studentId, studentName, exam }: ExamEngineProps) {
-   
-    <SEO title="Active Exam Session" noIndex={true} />
-   
+
     const [answers, setAnswers] = useState<{ [key: string]: number }>({});
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
@@ -134,6 +132,7 @@ export default function LiveExamEngine({ category, examId, attemptId, studentId,
     if (isSubmitted) {
         return (
             <ScreenContainer>
+                <SEO title="Assessment Complete" noIndex={true} />
                 <div className="max-w-xl m-auto p-10 border border-zinc-200 rounded-3xl bg-white shadow-xl text-center">
                     <span className="text-[10px] font-black tracking-[0.4em] text-zinc-400 uppercase mb-2 block">
                         Protocol Terminated
@@ -154,6 +153,7 @@ export default function LiveExamEngine({ category, examId, attemptId, studentId,
 
     return (
         <ScreenContainer>
+            <SEO title="Active Exam Session" noIndex={true} />
             <div className="max-w-3xl m-auto p-10 border border-zinc-200 rounded-3xl bg-white shadow-xl">
                 <div className="flex flex-col items-center text-center mb-8">
                     <span className="text-[10px] font-black tracking-[0.4em] text-emerald-600 uppercase mb-2">

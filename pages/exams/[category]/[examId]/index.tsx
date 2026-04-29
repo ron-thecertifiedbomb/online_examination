@@ -25,13 +25,6 @@ interface StartExamPageProps {
 
 export default function StartExamPage({ exam, categorySlug }: StartExamPageProps) {
 
-    <SEO
-        title={exam.name}
-        description={exam.description}
-        url={`/exams/${categorySlug}/${exam._id}`}
-        examName={exam.name}
-        examCategory={categorySlug}
-    />
     const router = useRouter();
     const [studentId, setStudentId] = useState("");
     const [isLoading, setIsLoading] = useState(false);
@@ -72,6 +65,13 @@ export default function StartExamPage({ exam, categorySlug }: StartExamPageProps
 
     return (
         <ScreenContainer >
+            <SEO
+                title={exam.name}
+                description={exam.description}
+                url={`/exams/${categorySlug}/${exam._id}`}
+                examName={exam.name}
+                examCategory={categorySlug}
+            />
             <div className="max-w-md m-auto w-full p-10 border border-zinc-200 rounded-3xl bg-white shadow-xl shadow-zinc-200/50 ">
                 <div className="flex flex-col items-center text-center mb-8">
 
