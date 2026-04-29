@@ -3,8 +3,10 @@ import type { AppProps } from "next/app";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
-import Footer from "../components/Footer/Footer";
-import NavBar from "../components/NavBar/NavBar";
+
+import NavBar from '@/components/shared/NavBar/Navbar';
+import Footer from '@/components/shared/Footer/Footer';
+
 
 export default function MyApp({ Component, pageProps }: AppProps) {
 
@@ -15,7 +17,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
       <NavBar />
 
       {/* Main Content Area */}
-      <main className="flex-grow">
+      <main>
         <Component {...pageProps} />
       </main>
 
