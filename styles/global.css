@@ -2,62 +2,71 @@
 
 @layer base {
   body {
-    @apply bg-black text-white antialiased;
+    /* CLEAN TEACHER UI: Soft off-white for reduced eye strain */
+    @apply bg-zinc-50 text-zinc-900 antialiased selection:bg-emerald-100 selection:text-emerald-900;
   }
 
-  canvas {
-    /* FIX: Stop the blur and jittery pixels */
-    image-rendering: pixelated;
-    image-rendering: crisp-edges;
+  /* Main Dashboard Container */
+  .teacher-card {
+    @apply bg-white border border-zinc-200 rounded-xl shadow-sm transition-all duration-200;
+  }
 
-    /* FIX: Lock the aspect ratio to hide overscan shimmer */
-    display: block;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 4 / 3; /* Use 3/2 for GBA */
-
-    /* LIZARD UI: Black + Emerald Glow */
-    background-color: #000;
-    @apply mx-auto border border-zinc-900;
-    box-shadow: 0 0 40px -15px rgba(16, 185, 129, 0.3);
+  .teacher-card:hover {
+    @apply shadow-md border-emerald-200;
   }
 }
 
-/* This wrapper acts as a bezel to hide the vertical garbage on the left */
-.emulator-wrapper {
-  overflow: hidden;
-  position: relative;
+/* --- EXAM MANAGEMENT TABLE --- */
+/* High-density data view for grading and student lists */
+.exam-table {
+  @apply w-full text-sm text-left border-collapse;
 }
 
-/* Custom Grayish-Black Scrollbar */
+.exam-table th {
+  @apply bg-zinc-100/80 p-4 font-semibold text-zinc-600 border-b border-zinc-200;
+}
+
+.exam-table td {
+  @apply p-4 border-b border-zinc-100 text-zinc-700;
+}
+
+/* --- TEACHER SCROLLBAR --- */
+/* Minimalist and subtle */
 .custom-scrollbar::-webkit-scrollbar {
-  height: 8px; /* Thin height for horizontal scroll */
+  width: 5px;
 }
 
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: #09090b; /* zinc-950 - blends into the background */
-  border-radius: 10px;
+  background: transparent;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: #27272a; /* zinc-800 - subtle grayish black */
-  border-radius: 10px;
-  border: 1px solid #09090b; /* adds a tiny gap effect */
+  @apply bg-zinc-300 rounded-full;
 }
 
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-  background: #3f3f46; /* zinc-700 - lights up slightly on hover */
+  @apply bg-emerald-400;
 }
 
-/* Remove arrows/spinners from number inputs */
-/* Chrome, Safari, Edge, Opera */
+/* --- INTERACTIVE STATES --- */
+.btn-primary {
+  @apply bg-emerald-600 text-white px-4 py-2 rounded-lg font-medium 
+         hover:bg-emerald-700 active:scale-95 transition-all shadow-sm;
+}
+
+.btn-secondary {
+  @apply bg-white border border-zinc-300 text-zinc-700 px-4 py-2 rounded-lg 
+         hover:bg-zinc-50 transition-all;
+}
+
+/* --- STATUS BADGES --- */
+.badge-active { @apply bg-emerald-100 text-emerald-700 px-2 py-1 rounded text-xs font-bold; }
+.badge-warning { @apply bg-amber-100 text-amber-700 px-2 py-1 rounded text-xs font-bold; }
+.badge-danger { @apply bg-rose-100 text-rose-700 px-2 py-1 rounded text-xs font-bold; }
+
+/* Remove number spinners */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-/* Firefox */
-input[type="number"] {
-  -moz-appearance: textfield;
 }
