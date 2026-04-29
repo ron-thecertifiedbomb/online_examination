@@ -1,18 +1,22 @@
 {
-  "name": "Lizard Interactive Online",
+  "name": "Online Examination",
   "version": "1.0.0",
   "description": "All-in-One Marketing & Dev Hub",
   "author": "RonDevSolutions",
   "config": {
     "theme": {
       "primaryColor": "#1d4ed8",
-      "darkBg": "#1d4ed8"
+      "backgroundColor": "#f8fafc"
     },
     "features": {
       "blog": true,
       "comments": true,
       "tools": true,
-      "emulator": true
+      "emulator": true,
+      "proctoring": true,
+      "instantGrading": true,
+      "tabMonitoring": true,
+      "timePersistence": true
     },
     "api": {
       "redis": true,
