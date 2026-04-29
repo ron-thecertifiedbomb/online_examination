@@ -1,16 +1,10 @@
-import { MongoClient, ObjectId } from 'mongodb'; // Import ObjectId
+import { ObjectId } from 'mongodb'; // Keep ObjectId for toString()
 import { GetServerSideProps } from "next";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import ScreenContainer from "@/components/shared/ScreenContainer/ScreenContainer";
-
-type Exam = {
-  _id: ObjectId; // Change _id to ObjectId
-  title: string;
-  slug: string;
-  description: string;
-  category?: string;
-};
+import clientPromise from "../lib/mongodb"; // Import clientPromise
+import { Exam } from "../lib/types"; // Import Exam type from shared types
 
 export default function ExamHomePage({ exams = [] }: { exams: Exam[] }) {
   return (
@@ -37,9 +31,7 @@ export default function ExamHomePage({ exams = [] }: { exams: Exam[] }) {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap mt-8">
           {exams.map((exam) => {
             // Format the category for the URL (e.g., "Frontend Dev" -> "frontend-dev")
-
             const categorySlug = exam.category ? exam.category.toLowerCase().replace(/\s+/g, '-') : 'general';
-
             return (
               <Link key={exam._id.toString()} href={`/exams/${categorySlug}/${exam._id}`}>
                 <motion.button
@@ -87,10 +79,9 @@ export default function ExamHomePage({ exams = [] }: { exams: Exam[] }) {
 }
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  const client = new MongoClient(process.env.MONGODB_URI!);
   try {
-    await client.connect(); // This will be replaced by clientPromise in a later step
-    const db = client.db('lizrd_core');
+    const client = await clientPromise; // Use the shared clientPromise
+    const db = client.db('lizrd_core'); // Get the database instance
     const exams = await db.collection('exams')
       .find({ status: 'published' })
       .project({ title: 1, slug: 1, description: 1, category: 1 })
@@ -103,7 +94,5 @@ export const getServerSideProps: GetServerSideProps = async () => {
     };
   } catch (error) {
     return { props: { exams: [] } };
-  } finally {
-    await client.close();
   }
 };
