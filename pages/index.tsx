@@ -1,11 +1,11 @@
-import { MongoClient } from 'mongodb';
+import { MongoClient, ObjectId } from 'mongodb'; // Import ObjectId
 import { GetServerSideProps } from "next";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import ScreenContainer from "@/components/shared/ScreenContainer/ScreenContainer";
 
 type Exam = {
-  _id: string;
+  _id: ObjectId; // Change _id to ObjectId
   title: string;
   slug: string;
   description: string;
@@ -37,9 +37,11 @@ export default function ExamHomePage({ exams = [] }: { exams: Exam[] }) {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap mt-8">
           {exams.map((exam) => {
             // Format the category for the URL (e.g., "Frontend Dev" -> "frontend-dev")
+
             const categorySlug = exam.category ? exam.category.toLowerCase().replace(/\s+/g, '-') : 'general';
+
             return (
-              <Link key={exam._id} href={`/exams/${categorySlug}/${exam._id}`}>
+              <Link key={exam._id.toString()} href={`/exams/${categorySlug}/${exam._id}`}>
                 <motion.button
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
@@ -56,7 +58,7 @@ export default function ExamHomePage({ exams = [] }: { exams: Exam[] }) {
             );
           })}
 
-  
+
         </div>
       </motion.div>
 
@@ -87,7 +89,7 @@ export default function ExamHomePage({ exams = [] }: { exams: Exam[] }) {
 export const getServerSideProps: GetServerSideProps = async () => {
   const client = new MongoClient(process.env.MONGODB_URI!);
   try {
-    await client.connect();
+    await client.connect(); // This will be replaced by clientPromise in a later step
     const db = client.db('lizrd_core');
     const exams = await db.collection('exams')
       .find({ status: 'published' })

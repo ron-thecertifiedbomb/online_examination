@@ -1,4 +1,4 @@
-import { MongoClient, ObjectId } from 'mongodb';
+import { ObjectId } from 'mongodb';
 import { GetServerSideProps } from 'next';
 import { useState, useEffect } from 'react';
 import ScreenContainer from "@/components/shared/ScreenContainer/ScreenContainer";
@@ -12,7 +12,7 @@ export type Question = {
 };
 
 export type Exam = {
-    _id: string;
+    _id: ObjectId;
     title: string;
     durationMinutes: number;
     passingScore: number;
@@ -223,7 +223,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     // Extract query parameters
     const studentId = context.query.studentId as string || 'Unknown';
 
-    const client = new MongoClient(process.env.MONGODB_URI!);
+    const client = await import('../../../../lib/mongodb').then(m => m.default); // Use the shared clientPromise
     let studentName = "Unknown Student"; // Default fallback
     let exam = null;
 
@@ -235,7 +235,6 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
             return { notFound: true }; // Invalid ID format
         }
 
-        await client.connect();
         const db = client.db('lizrd_core');
         const foundExam = await db.collection('exams').findOne({ _id: objectId });
 
@@ -251,8 +250,6 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
         exam = JSON.parse(JSON.stringify(foundExam));
     } catch (e) {
         return { notFound: true };
-    } finally {
-        await client.close();
     }
 
     return {

@@ -1,4 +1,4 @@
-import { MongoClient, ObjectId, WithId, Document } from 'mongodb';
+import { ObjectId, WithId, Document } from 'mongodb';
 import { GetServerSideProps } from 'next';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
@@ -8,6 +8,16 @@ import ScreenContainer from "../../../../components/shared/ScreenContainer/Scree
 // It's a good practice to have a specific type for the props
 interface StartExamPageProps {
     exam: WithId<Document>;
+    // The `exam` prop will have `_id: ObjectId` due to the `WithId<Document>` type.
+    // However, if you want a more specific type for `exam`, you can define it.
+    // For example:
+    // exam: {
+    //     _id: ObjectId;
+    //     title: string;
+    //     durationMinutes: number;
+    //     passingScore: number;
+    //     // ... other exam properties
+    // };
     categorySlug: string;
 }
 
@@ -104,7 +114,7 @@ export default function StartExamPage({ exam, categorySlug }: StartExamPageProps
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
     const { category, examId: id } = context.params as { category: string, examId: string };
-    const client = new MongoClient(process.env.MONGODB_URI!);
+    const client = await import('../../../../lib/mongodb').then(m => m.default); // Use the shared clientPromise
 
     try {
         let objectId;
@@ -114,7 +124,6 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
             return { notFound: true }; // Invalid ID format
         }
 
-        await client.connect();
         const db = client.db('lizrd_core');
         const exam = await db.collection('exams').findOne({ _id: objectId });
 
@@ -123,7 +132,5 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
         return { props: { exam: JSON.parse(JSON.stringify(exam)), categorySlug: category } };
     } catch (e) {
         return { notFound: true };
-    } finally {
-        await client.close();
     }
 };

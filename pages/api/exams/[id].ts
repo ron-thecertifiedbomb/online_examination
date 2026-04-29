@@ -1,6 +1,7 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import clientPromise from "../../../lib/mongodb";
+
 import { ObjectId } from "mongodb";
+import clientPromise from "../../../lib/mongodb";
 
 export type Question = {
   id: string;

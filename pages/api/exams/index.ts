@@ -1,5 +1,6 @@
-import { MongoClient } from "mongodb";
 import type { NextApiRequest, NextApiResponse } from "next";
+import { MongoClient, ObjectId } from "mongodb"; // Import ObjectId here
+import clientPromise from "../../../lib/mongodb"; // Import clientPromise
 
 export default async function handler(
   req: NextApiRequest,
@@ -12,10 +13,10 @@ export default async function handler(
       .json({ message: `Method ${req.method} Not Allowed` });
   }
 
-  const client = new MongoClient(process.env.MONGODB_URI!);
   try {
-    await client.connect();
-    const db = client.db("lizrd_core");
+    const client = await clientPromise; // Use the shared clientPromise
+    const db = client.db("lizrd_core"); // Get the database instance
+
     const exams = await db
       .collection("exams")
       .find({ status: "published" })
@@ -25,7 +26,14 @@ export default async function handler(
   } catch (error) {
     console.error("API Error:", error);
     res.status(500).json({ message: "Internal Server Error" });
-  } finally {
-    await client.close();
   }
 }
+
+export type Exam = {
+  // Define Exam type here for consistency
+  _id: ObjectId;
+  title: string;
+  slug: string;
+  description: string;
+  category?: string;
+};
