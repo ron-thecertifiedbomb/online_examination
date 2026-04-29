@@ -1,10 +1,15 @@
-import { MongoClient } from 'mongodb';
+import { MongoClient, ObjectId, WithId, Document } from 'mongodb';
 import { GetServerSideProps } from 'next';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import ScreenContainer from "@/components/shared/ScreenContainer/ScreenContainer";
 
-export default function StartExamPage({ exam }: { exam: any }) {
+// It's a good practice to have a specific type for the props
+interface StartExamPageProps {
+    exam: WithId<Document>;
+}
+
+export default function StartExamPage({ exam }: StartExamPageProps) {
     const router = useRouter();
     const [studentId, setStudentId] = useState("");
     const [isLoading, setIsLoading] = useState(false);
@@ -15,21 +20,11 @@ export default function StartExamPage({ exam }: { exam: any }) {
         setIsLoading(true);
 
         try {
-            // 1. Initialize the attempt in your 'live_attempts' collection
-            const res = await fetch('/api/exams/initialize-attempt', {
-                method: 'POST',
-                body: JSON.stringify({
-                    examId: exam._id,
-                    studentId: studentId,
-                    startTime: new Date()
-                }),
-                headers: { 'Content-Type': 'application/json' }
-            });
+            // 1. Generate a local attempt ID (mocking a 24-character MongoDB ObjectId)
+            const localAttemptId = [...Array(24)].map(() => Math.floor(Math.random() * 16).toString(16)).join('');
 
-            const data = await res.json();
-
-            // 2. Redirect to the Live Engine
-            router.push(`/engineering/exams/live/${data.attemptId}`);
+            // 2. We push to the new [examId]/[attemptId] route structure
+            router.push(`/engineering/exams/${exam._id}/${localAttemptId}?studentId=${encodeURIComponent(studentId)}`);
         } catch (error) {
             console.error("Lizard Engine Error:", error);
             setIsLoading(false);
@@ -91,21 +86,24 @@ export default function StartExamPage({ exam }: { exam: any }) {
 }
 
 export const getServerSideProps: GetServerSideProps = async (context) => {
-    const { slug } = context.params as { slug: string };
+    const { examId: id } = context.params as { examId: string };
     const client = new MongoClient(process.env.MONGODB_URI!);
 
     try {
+        let objectId;
+        try {
+            objectId = new ObjectId(id);
+        } catch (error) {
+            return { notFound: true }; // Invalid ID format
+        }
+
         await client.connect();
         const db = client.db('lizrd_core');
-        const exam = await db.collection('exams').findOne({ slug });
+        const exam = await db.collection('exams').findOne({ _id: objectId });
 
         if (!exam) return { notFound: true };
 
-        return {
-            props: {
-                exam: JSON.parse(JSON.stringify(exam))
-            }
-        };
+        return { props: { exam: JSON.parse(JSON.stringify(exam)) } };
     } catch (e) {
         return { notFound: true };
     } finally {

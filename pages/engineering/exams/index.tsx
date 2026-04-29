@@ -34,7 +34,7 @@ export default function ExamHomePage({ exams }: { exams: Exam[] }) {
                 {/* DYNAMIC EXAM SELECTION */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-center mb-12">
                     {exams.map((exam) => (
-                        <Link key={exam._id} href={`/engineering/exams/${exam.slug}`}>
+                        <Link key={exam._id} href={`/engineering/exams/${exam._id}`}>
                             <motion.div
                                 whileHover={{ scale: 1.02, borderColor: '#10b981' }}
                                 whileTap={{ scale: 0.98 }}

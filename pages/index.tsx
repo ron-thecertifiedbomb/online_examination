@@ -1,12 +1,19 @@
-'use client';
-
+import { MongoClient } from 'mongodb';
+import { GetServerSideProps } from "next";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import ScreenContainer from "@/components/shared/ScreenContainer/ScreenContainer";
 
-export default function ExamHomePage() {
+type Exam = {
+  _id: string;
+  title: string;
+  slug: string;
+  description: string;
+};
+
+export default function ExamHomePage({ exams = [] }: { exams: Exam[] }) {
   return (
-    <ScreenContainer >
+    <ScreenContainer>
       {/* Hero Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -14,37 +21,50 @@ export default function ExamHomePage() {
         transition={{ duration: 0.5 }}
         className="text-center max-w-3xl m-auto"
       >
-        {/* TEXT COLOR: Changed to zinc-900 for Teacher UI */}
-        <h1 className="text-4xl md:text-6xl font-bold tracking-tight text-zinc-900 mb-6">
+        <h1 className="text-4xl md:text-6xl font-black tracking-tight text-zinc-900 mb-6 uppercase">
           Secure <span className="text-emerald-600">Proctoring</span> &
           Exam Engine
         </h1>
 
-        {/* PARAGRAPH: Changed to zinc-500 for better readability on light bg */}
-        <p className="text-lg text-zinc-500 mb-10 leading-relaxed">
-          Engineered for high-integrity certifications. Featuring real-time tab-monitoring,
-          instant MongoDB state persistence, and sub-100ms response times.
+        <p className="text-lg text-zinc-500 mb-10 leading-relaxed max-w-2xl mx-auto">
+          High-integrity certifications featuring real-time tab-monitoring and
+          instant MongoDB state persistence. Select an assessment protocol to initialize.
         </p>
 
         {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/engineering/exams/nextjs-fundamentals">
+   
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap mt-8">
+          {exams.map((exam) => (
+            <Link key={exam._id} href={`/engineering/exams/${exam._id}`}>
+              <motion.button
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                className="w-full sm:w-64 px-8 py-4 bg-emerald-600 text-white font-black text-sm rounded-xl hover:bg-emerald-700 shadow-sm transition-all uppercase tracking-widest border-2 border-emerald-600"
+              >
+                Start {exam.title}
+              </motion.button>
+            </Link>
+          ))}
+
+          {/* NEW: Exam Categories Button - Matches "Start" buttons in size */}
+          <Link href="/engineering/exams/categories">
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="px-8 py-4 bg-emerald-600 text-white font-semibold rounded-lg hover:bg-emerald-700 shadow-sm transition-colors"
+              className="w-full sm:w-64 px-8 py-4 border-2 border-zinc-200 text-zinc-900 font-black text-sm rounded-xl hover:bg-zinc-50 transition-all uppercase tracking-widest"
             >
-              Start Entrance Exam
+              Exam Categories
             </motion.button>
           </Link>
 
+          {/* Back to Toolkit - Same width for balance */}
           <Link href="/engineering/toolkit">
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
-              className="px-8 py-4 border border-zinc-300 text-zinc-700 font-semibold rounded-lg hover:bg-zinc-50 transition-colors"
+              className="w-full sm:w-64 px-8 py-4 border-2 border-transparent text-zinc-400 font-black text-xs hover:text-zinc-900 transition-all uppercase tracking-widest"
             >
-              Back to Toolkit
+              ← Back to Toolkit
             </motion.button>
           </Link>
         </div>
@@ -57,20 +77,41 @@ export default function ExamHomePage() {
         transition={{ delay: 0.4, duration: 1 }}
         className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 w-full"
       >
-        {/* CARD STYLES: Switched to white bg with zinc borders */}
-        <div className="p-6 rounded-xl border border-zinc-200 bg-white shadow-sm">
-          <h3 className="text-emerald-600 font-bold mb-2">Anti-Cheat</h3>
-          <p className="text-sm text-zinc-500">Automatic detection of tab-switching and window-blurring events.</p>
+        <div className="p-8 rounded-[2rem] border-2 border-zinc-100 bg-white shadow-sm">
+          <h3 className="text-emerald-600 font-black text-[10px] uppercase tracking-[0.3em] mb-3">Anti-Cheat</h3>
+          <p className="text-sm text-zinc-500 italic">Detection of tab-switching and window-blurring events.</p>
         </div>
-        <div className="p-6 rounded-xl border border-zinc-200 bg-white shadow-sm">
-          <h3 className="text-emerald-600 font-bold mb-2">Instant Save</h3>
-          <p className="text-sm text-zinc-500">Progress is synced to your lizard_core MongoDB cluster in real-time.</p>
+        <div className="p-8 rounded-[2rem] border-2 border-zinc-100 bg-white shadow-sm">
+          <h3 className="text-emerald-600 font-black text-[10px] uppercase tracking-[0.3em] mb-3">Instant Save</h3>
+          <p className="text-sm text-zinc-500 italic">Progress is synced to MongoDB cluster in real-time.</p>
         </div>
-        <div className="p-6 rounded-xl border border-zinc-200 bg-white shadow-sm">
-          <h3 className="text-emerald-600 font-bold mb-2">Auto-Grading</h3>
-          <p className="text-sm text-zinc-500">Server-side logic calculates results immediately upon submission.</p>
+        <div className="p-8 rounded-[2rem] border-2 border-zinc-100 bg-white shadow-sm">
+          <h3 className="text-emerald-600 font-black text-[10px] uppercase tracking-[0.3em] mb-3">Auto-Grading</h3>
+          <p className="text-sm text-zinc-500 italic">Server-side logic calculates results immediately.</p>
         </div>
       </motion.div>
     </ScreenContainer>
   );
 }
+
+export const getServerSideProps: GetServerSideProps = async () => {
+  const client = new MongoClient(process.env.MONGODB_URI!);
+  try {
+    await client.connect();
+    const db = client.db('lizrd_core');
+    const exams = await db.collection('exams')
+      .find({ status: 'published' })
+      .project({ title: 1, slug: 1, description: 1 })
+      .toArray();
+
+    return {
+      props: {
+        exams: JSON.parse(JSON.stringify(exams)),
+      },
+    };
+  } catch (error) {
+    return { props: { exams: [] } };
+  } finally {
+    await client.close();
+  }
+};
