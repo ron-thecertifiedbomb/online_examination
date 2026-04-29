@@ -41,21 +41,14 @@ export default function NavBar() {
         }, 600);
     };
 
-    const brandName = "LIZARD INTERACTIVE ONLINE";
+    const brandName = "ONLINE EXAMINATION";
 
     return (
         <>
             <header className="fixed top-0 left-0 right-0 h-[72px] md:h-[65px] z-[100] bg-black/80 backdrop-blur-xl border-b border-white/4 text-white">
                 <nav className="flex items-center justify-between w-full max-w-7xl mx-auto px-6 h-full relative">
                     <Link href="/" className="flex items-center gap-2">
-                        <Image
-                            src="/lizardinteractive.png"
-                            alt="Logo"
-                            width={30}
-                            height={30}
-                            className="rounded-full "
-                            priority
-                        />
+                     
                         <span className="font-bold tracking-tight text-emerald-500 hover:text-emerald-500/30" >{brandName}</span>
                     </Link>
 
