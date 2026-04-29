@@ -35,25 +35,29 @@ export default function ExamHomePage({ exams = [] }: { exams: Exam[] }) {
         {/* Action Buttons */}
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap mt-8">
-          {exams.map((exam) => (
-            <Link key={exam._id} href={`/engineering/exams/${exam._id}`}>
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                className="w-full sm:w-64 h-24 text-left px-6 py-4 bg-emerald-600 text-white rounded-xl hover:bg-emerald-700 shadow-sm transition-all border-2 border-emerald-600 flex flex-col justify-center"
-              >
-                {exam.category && (
-                  <span className="block text-[10px] font-bold text-emerald-200 uppercase tracking-widest">{exam.category}</span>
-                )}
-                <span className="block font-black text-sm uppercase tracking-widest mt-1">
-                  {exam.title}
-                </span>
-              </motion.button>
-            </Link>
-          ))}
+          {exams.map((exam) => {
+            // Format the category for the URL (e.g., "Frontend Dev" -> "frontend-dev")
+            const categorySlug = exam.category ? exam.category.toLowerCase().replace(/\s+/g, '-') : 'general';
+            return (
+              <Link key={exam._id} href={`/exams/${categorySlug}/${exam._id}`}>
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full sm:w-64 h-24 text-left px-6 py-4 bg-emerald-600 text-white rounded-xl hover:bg-emerald-700 shadow-sm transition-all border-2 border-emerald-600 flex flex-col justify-center"
+                >
+                  {exam.category && (
+                    <span className="block text-[10px] font-bold text-emerald-200 uppercase tracking-widest">{exam.category}</span>
+                  )}
+                  <span className="block font-black text-sm uppercase tracking-widest mt-1">
+                    {exam.title}
+                  </span>
+                </motion.button>
+              </Link>
+            );
+          })}
 
           {/* NEW: Exam Categories Button - Matches "Start" buttons in size */}
-          <Link href="/engineering/exams/categories">
+          <Link href="/exams/categories">
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
