@@ -60,7 +60,8 @@
     "vfile": "^6.0.3"
   },
   "devDependencies": {
-    "@types/node": "^18.11.5",
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^18.19.130",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "autoprefixer": "^10.4.12",

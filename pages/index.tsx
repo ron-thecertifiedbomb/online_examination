@@ -9,6 +9,7 @@ type Exam = {
   title: string;
   slug: string;
   description: string;
+  category?: string;
 };
 
 export default function ExamHomePage({ exams = [] }: { exams: Exam[] }) {
@@ -32,16 +33,21 @@ export default function ExamHomePage({ exams = [] }: { exams: Exam[] }) {
         </p>
 
         {/* Action Buttons */}
-   
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap mt-8">
           {exams.map((exam) => (
             <Link key={exam._id} href={`/engineering/exams/${exam._id}`}>
               <motion.button
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
-                className="w-full sm:w-64 px-8 py-4 bg-emerald-600 text-white font-black text-sm rounded-xl hover:bg-emerald-700 shadow-sm transition-all uppercase tracking-widest border-2 border-emerald-600"
+                className="w-full sm:w-64 h-24 text-left px-6 py-4 bg-emerald-600 text-white rounded-xl hover:bg-emerald-700 shadow-sm transition-all border-2 border-emerald-600 flex flex-col justify-center"
               >
-                Start {exam.title}
+                {exam.category && (
+                  <span className="block text-[10px] font-bold text-emerald-200 uppercase tracking-widest">{exam.category}</span>
+                )}
+                <span className="block font-black text-sm uppercase tracking-widest mt-1">
+                  {exam.title}
+                </span>
               </motion.button>
             </Link>
           ))}
@@ -101,7 +107,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
     const db = client.db('lizrd_core');
     const exams = await db.collection('exams')
       .find({ status: 'published' })
-      .project({ title: 1, slug: 1, description: 1 })
+      .project({ title: 1, slug: 1, description: 1, category: 1 })
       .toArray();
 
     return {

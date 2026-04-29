@@ -2,7 +2,8 @@ import { MongoClient, ObjectId, WithId, Document } from 'mongodb';
 import { GetServerSideProps } from 'next';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
-import ScreenContainer from "@/components/shared/ScreenContainer/ScreenContainer";
+import React from 'react';
+import ScreenContainer from "../../../../components/shared/ScreenContainer/ScreenContainer";
 
 // It's a good practice to have a specific type for the props
 interface StartExamPageProps {
@@ -20,10 +21,17 @@ export default function StartExamPage({ exam }: StartExamPageProps) {
         setIsLoading(true);
 
         try {
-            // 1. Generate a local attempt ID (mocking a 24-character MongoDB ObjectId)
+            // 1. Verify the student exists in the database
+            const studentRes = await fetch(`/api/students/${encodeURIComponent(studentId)}`);
+            if (!studentRes.ok) {
+                setIsLoading(false);
+                return alert("Student ID not found. Please check your credentials.");
+            }
+
+            // 2. Generate a local attempt ID (mocking a 24-character MongoDB ObjectId)
             const localAttemptId = [...Array(24)].map(() => Math.floor(Math.random() * 16).toString(16)).join('');
 
-            // 2. We push to the new [examId]/[attemptId] route structure
+            // 3. We push to the new [examId]/[attemptId] route structure
             router.push(`/engineering/exams/${exam._id}/${localAttemptId}?studentId=${encodeURIComponent(studentId)}`);
         } catch (error) {
             console.error("Lizard Engine Error:", error);

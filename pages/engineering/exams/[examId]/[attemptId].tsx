@@ -7,9 +7,10 @@ interface ExamEngineProps {
     attemptId: string;
     studentId: string;
     examTitle: string;
+    studentName: string;
 }
 
-export default function LiveExamEngine({ examId, attemptId, studentId, examTitle }: ExamEngineProps) {
+export default function LiveExamEngine({ examId, attemptId, studentId, examTitle, studentName }: ExamEngineProps) {
     return (
         <ScreenContainer>
             <div className="max-w-3xl m-auto p-10 border border-zinc-200 rounded-3xl bg-white shadow-xl">
@@ -26,6 +27,7 @@ export default function LiveExamEngine({ examId, attemptId, studentId, examTitle
                     <p><span className="text-zinc-400 font-bold uppercase tracking-widest mr-2">Exam ID:</span> {examId}</p>
                     <p><span className="text-zinc-400 font-bold uppercase tracking-widest mr-2">Attempt ID:</span> {attemptId}</p>
                     <p><span className="text-zinc-400 font-bold uppercase tracking-widest mr-2">Student ID:</span> {studentId}</p>
+                    <p><span className="text-zinc-400 font-bold uppercase tracking-widest mr-2">Student Name:</span> {studentName}</p>
                 </div>
 
                 <div className="mt-12 text-center text-zinc-500 text-sm">
@@ -49,6 +51,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
     const client = new MongoClient(process.env.MONGODB_URI!);
     let examTitle = "Exam Engine"; // Default fallback
+    let studentName = "Unknown Student"; // Default fallback
 
     try {
         let objectId;
@@ -64,6 +67,13 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
 
         if (!exam) return { notFound: true };
         examTitle = exam.title;
+
+        if (studentId !== 'Unknown') {
+            const student = await db.collection('students').findOne({ studentId });
+            if (student) {
+                studentName = student.name;
+            }
+        }
     } catch (e) {
         return { notFound: true };
     } finally {
@@ -75,7 +85,8 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
             examId,
             attemptId,
             studentId,
-            examTitle
+            examTitle,
+            studentName
         }
     };
 };
