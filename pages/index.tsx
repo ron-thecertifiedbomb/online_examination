@@ -28,7 +28,7 @@ export default function ExamHomePage() {
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link href="/engineering/exams/start">
+          <Link href="/engineering/exams/nextjs-fundamentals">
             <motion.button
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
