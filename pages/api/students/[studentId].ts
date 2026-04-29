@@ -1,5 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import { MongoClient } from "mongodb";
+import { MongoClient, ObjectId } from "mongodb"; // Import ObjectId
+import clientPromise from "../../../lib/mongodb"; // Import clientPromise
 
 export default async function handler(
   req: NextApiRequest,
@@ -35,7 +36,5 @@ export default async function handler(
   } catch (error) {
     console.error("API Error:", error);
     res.status(500).json({ message: "Internal Server Error" });
-  } finally {
-    await client.close();
   }
 }
