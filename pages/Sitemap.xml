@@ -1,0 +1,72 @@
+import { GetServerSideProps } from "next";
+
+// Add any static routes here. Dynamic exam routes are injected below.
+const STATIC_ROUTES = [
+  { path: "/", priority: "1.0", changefreq: "weekly" },
+  { path: "/exams", priority: "0.9", changefreq: "daily" },
+  { path: "/exams/schedule", priority: "0.7", changefreq: "weekly" },
+  { path: "/exams/results", priority: "0.6", changefreq: "weekly" },
+];
+
+function generateSiteMap(
+  staticRoutes: typeof STATIC_ROUTES,
+  examSlugs: { category: string; id: string }[]
+) {
+  const BASE_URL = "https://online-examination-neon.vercel.app";
+  const today = new Date().toISOString().split("T")[0];
+
+  return `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  ${staticRoutes
+    .map(
+      ({ path, priority, changefreq }) => `
+  <url>
+    <loc>${BASE_URL}${path}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>${changefreq}</changefreq>
+    <priority>${priority}</priority>
+  </url>`
+    )
+    .join("")}
+  ${examSlugs
+    .map(
+      ({ category, id }) => `
+  <url>
+    <loc>${BASE_URL}/exams/${category}/${id}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>`
+    )
+    .join("")}
+</urlset>`;
+}
+
+function SiteMap() {
+  // getServerSideProps handles the response
+  return null;
+}
+
+export const getServerSideProps: GetServerSideProps = async ({ res }) => {
+  // Fetch your exam list from MongoDB here to populate dynamic routes.
+  // Replace this with a real DB call, e.g.:
+  //   const exams = await db.collection("exams").find({}, { projection: { category: 1, _id: 1 } }).toArray();
+  //   const examSlugs = exams.map(e => ({ category: e.category, id: e._id.toString() }));
+  const examSlugs: { category: string; id: string }[] = [
+    { category: "frontend", id: "69f183b12a7bce6f8220607d" },
+    { category: "architecture", id: "69f183b12a7bce6f8220607e" },
+    { category: "backend", id: "69f1a6a20cd76239defe1e2d" },
+    { category: "devops", id: "69f1a6a20cd76239defe1e2e" },
+  ];
+
+  const sitemap = generateSiteMap(STATIC_ROUTES, examSlugs);
+
+  res.setHeader("Content-Type", "text/xml");
+  res.setHeader("Cache-Control", "public, s-maxage=86400, stale-while-revalidate");
+  res.write(sitemap);
+  res.end();
+
+  return { props: {} };
+};
+
+export default SiteMap;

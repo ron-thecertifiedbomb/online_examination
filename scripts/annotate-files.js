@@ -1,3 +1,4 @@
+// File: annotate-files.js
 const fs = require("fs");
 const path = require("path");
 
@@ -22,10 +23,10 @@ function annotateFiles(dir) {
       const relativePath = path.relative(rootDir, filePath).replace(/\\/g, "/");
       const content = fs.readFileSync(filePath, "utf8");
 
-      const header = `// File: ${relativePath}\n`;
+      const header = ` ${relativePath}\n`;
 
       // Prevent duplicate headers if you run the script twice
-      if (!content.startsWith("// File:")) {
+      if (!content.startsWith("")) {
         const newContent = header + content;
         fs.writeFileSync(filePath, newContent, "utf8");
         console.log(`✅ Annotated: ${relativePath}`);

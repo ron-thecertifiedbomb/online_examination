@@ -1,3 +1,4 @@
+// File: pages/api/exams/[id].ts
 import type { NextApiRequest, NextApiResponse } from "next";
 
 import { ObjectId } from "mongodb";

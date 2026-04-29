@@ -1,3 +1,4 @@
+// File: types/natigation.ts
 // types/navigation.ts (Optional: if you want to type your links)
 export interface NavLink {
   href: string;

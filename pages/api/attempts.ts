@@ -1,4 +1,4 @@
-// File: pages/api/attempts/attempts.ts
+// File: pages/api/attempts.ts
 import { MongoClient } from "mongodb";
 
 export default async function handler(req: any, res: any) {

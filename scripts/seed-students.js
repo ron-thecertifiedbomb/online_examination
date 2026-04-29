@@ -1,3 +1,4 @@
+// File: seed-students.js
 const { MongoClient } = require("mongodb");
 require("dotenv").config({ path: ".env.local" });
 

@@ -1,0 +1,9 @@
+User - agent: *
+    Allow: /
+Allow: /exams
+ 
+# Block active exam sessions from being indexed
+Disallow: /exams/ */session
+Disallow: /api/
+
+Sitemap: https://online-examination-neon.vercel.app/sitemap.xml

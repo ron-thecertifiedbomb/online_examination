@@ -1,3 +1,4 @@
+// File: pages/index.tsx
 import { ObjectId } from 'mongodb'; // Keep ObjectId for toString()
 import { GetServerSideProps } from "next";
 import Link from "next/link";
@@ -5,11 +6,15 @@ import { motion } from "framer-motion";
 import ScreenContainer from "@/components/shared/ScreenContainer/ScreenContainer";
 import clientPromise from "../lib/mongodb"; // Import clientPromise
 import { Exam } from "../lib/types"; // Import Exam type from shared types
+import SEO from '@/components/shared/SEO/SEO';
 
 export default function ExamHomePage({ exams = [] }: { exams: Exam[] }) {
   return (
     <ScreenContainer>
-      {/* Hero Section */}
+      <SEO
+        title="Secure Proctoring & Exam Engine"
+        url="/"
+      />
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}

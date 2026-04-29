@@ -1,3 +1,4 @@
+// File: components/shared/Footer/Footer.tsx
 "use client";
 
 export default function Footer() {

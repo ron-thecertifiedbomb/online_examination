@@ -1,9 +1,11 @@
+// File: pages/exams/[category]/[examId]/index.tsx
 import { ObjectId, WithId, Document } from 'mongodb';
 import { GetServerSideProps } from 'next';
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 import React from 'react';
 import ScreenContainer from "../../../../components/shared/ScreenContainer/ScreenContainer";
+import SEO from '@/components/shared/SEO/SEO';
 
 // It's a good practice to have a specific type for the props
 interface StartExamPageProps {
@@ -22,6 +24,14 @@ interface StartExamPageProps {
 }
 
 export default function StartExamPage({ exam, categorySlug }: StartExamPageProps) {
+
+    <SEO
+        title={exam.name}
+        description={exam.description}
+        url={`/exams/${categorySlug}/${exam._id}`}
+        examName={exam.name}
+        examCategory={categorySlug}
+    />
     const router = useRouter();
     const [studentId, setStudentId] = useState("");
     const [isLoading, setIsLoading] = useState(false);

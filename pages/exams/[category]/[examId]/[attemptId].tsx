@@ -1,7 +1,9 @@
+// File: pages/exams/[category]/[examId]/[attemptId].tsx
 import { ObjectId } from 'mongodb';
 import { GetServerSideProps } from 'next';
 import { useState, useEffect } from 'react';
 import ScreenContainer from "@/components/shared/ScreenContainer/ScreenContainer";
+import SEO from '@/components/shared/SEO/SEO';
 
 export type Question = {
     id: string;
@@ -29,6 +31,9 @@ interface ExamEngineProps {
 }
 
 export default function LiveExamEngine({ category, examId, attemptId, studentId, studentName, exam }: ExamEngineProps) {
+   
+    <SEO title="Active Exam Session" noIndex={true} />
+   
     const [answers, setAnswers] = useState<{ [key: string]: number }>({});
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);

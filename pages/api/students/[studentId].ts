@@ -1,3 +1,4 @@
+// File: pages/api/students/[studentId].ts
 import type { NextApiRequest, NextApiResponse } from "next";
 import { MongoClient, ObjectId } from "mongodb"; // Import ObjectId
 import clientPromise from "../../../lib/mongodb"; // Import clientPromise

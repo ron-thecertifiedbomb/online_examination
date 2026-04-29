@@ -1,3 +1,4 @@
+// File: pages/api/attempts/initialize.ts
 import clientPromise from "@/lib/mongodb";
 import { ObjectId } from "mongodb";
 import type { NextApiRequest, NextApiResponse } from "next";

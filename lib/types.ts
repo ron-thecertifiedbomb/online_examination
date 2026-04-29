@@ -1,3 +1,4 @@
+// File: lib/types.ts
 import { ObjectId } from "mongodb";
 
 export type Question = {
