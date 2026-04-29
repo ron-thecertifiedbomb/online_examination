@@ -1,0 +1,58 @@
+
+{
+  "services": [
+    {
+      "category": "Front-End",
+      "items": [
+        "Responsive websites & landing pages",
+        "Single Page Applications (React, Next.js)",
+        "UI/UX improvements & interactive features",
+        "Mobile-first design"
+      ]
+    },
+    {
+      "category": "Back-End",
+      "items": [
+        "REST & GraphQL APIs",
+        "Database integration (SQL, NoSQL, Supabase, Firebase)",
+        "User authentication & security",
+        "Server-side logic & automation"
+      ]
+    },
+    {
+      "category": "Full-Stack",
+      "items": [
+        "End-to-end web applications",
+        "E-commerce websites & dashboards",
+        "SaaS platforms & internal tools"
+      ]
+    },
+    {
+      "category": "Mobile Development",
+      "items": [
+        "Cross-platform apps (React Native, Expo)",
+        "Android & iOS applications",
+        "Integration with APIs & databases",
+        "Push notifications & app store deployment"
+      ]
+    },
+    {
+      "category": "Specialized",
+      "items": [
+        "Progressive Web Apps (PWA)",
+        "Performance & SEO optimization",
+        "Website maintenance & migrations",
+        "Custom components & reusable libraries"
+      ]
+    },
+    {
+      "category": "Consulting",
+      "items": [
+        "Tech stack recommendations",
+        "Code reviews & optimization",
+        "Workshops & training"
+      ]
+    }
+  ],
+  "tagline": "I build fast, secure, and visually appealing web and mobile solutions tailored to your goals."
+}

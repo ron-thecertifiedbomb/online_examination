@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-black text-white antialiased;
+  }
+
+  canvas {
+    /* FIX: Stop the blur and jittery pixels */
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+
+    /* FIX: Lock the aspect ratio to hide overscan shimmer */
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3; /* Use 3/2 for GBA */
+
+    /* LIZARD UI: Black + Emerald Glow */
+    background-color: #000;
+    @apply mx-auto border border-zinc-900;
+    box-shadow: 0 0 40px -15px rgba(16, 185, 129, 0.3);
+  }
+}
+
+/* This wrapper acts as a bezel to hide the vertical garbage on the left */
+.emulator-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Custom Grayish-Black Scrollbar */
+.custom-scrollbar::-webkit-scrollbar {
+  height: 8px; /* Thin height for horizontal scroll */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #09090b; /* zinc-950 - blends into the background */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #27272a; /* zinc-800 - subtle grayish black */
+  border-radius: 10px;
+  border: 1px solid #09090b; /* adds a tiny gap effect */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46; /* zinc-700 - lights up slightly on hover */
+}
+
+/* Remove arrows/spinners from number inputs */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}

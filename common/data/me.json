@@ -1,0 +1,81 @@
+{
+  "personal": {
+    "name": "Ronan Ramos Sibunga",
+    "title": "Web and Mobile Developer - Javascript | ReactJS | React Native",
+    "location": "Philippines",
+    "profilePhoto": "https://via.placeholder.com/150",
+    "summary": "Fullstack developer specializing in React, React Native, Node.js, and MongoDB. Passionate about building scalable apps, solving complex problems, and learning new technologies.",
+    "aboutMe": "I am a results-driven Fullstack Developer with extensive experience in building web and mobile applications using modern JavaScript frameworks. I focus on creating scalable, maintainable, and user-friendly solutions, collaborating closely with cross-functional teams, and continuously improving technical skills. I enjoy mentoring peers and contributing to team success while delivering high-quality software solutions."
+  },
+  "contact": {
+    "email": "ronan.ramos.sibunga@gmail.com",
+    "address": "B 12 L 24 Ph 2B Cuarteles St. Ciudad Real Subdivision, Brgy Ciudad Real, City of San Jose Del Monte Bulacan",
+    "phone": "+63 9913817033",
+    "github": "github.com/ron-thecertifiedbomb",
+    "linkedin": "linkedin.com/in/ronan-sibunga-2747a5252",
+    "portfolio": "https:ronansibunga.vercel.app/",
+    "website": "https:www.lizardinteractive.online/"
+  },
+  "headlineTags": [
+    "Fullstack Developer",
+    "React",
+    "Node.js",
+    "React Native",
+    "API Development",
+    "Zustand",
+    "Expo",
+    "NextJS",
+    "MongoDB",
+    "PostGres"
+  ],
+  "skills": [
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "React Native",
+    "Node.js",
+    "MongoDB",
+    "GraphQL",
+    "REST APIs"
+  ],
+  "experience": [
+    {
+      "role": "Fullstack Developer",
+      "company": "Lizard Interactive Online",
+      "period": "March 2025 - Present",
+      "description": "Develop and maintain web and mobile applications using React, React Native, and Node.js, implementing scalable solutions and enhancing user experience."
+    },
+    {
+      "role": "Full Stack Developer (Sub Lead)",
+      "company": "Ascendion",
+      "period": "Dec 2024 - Feb 2025",
+      "description": "Led front-end development and collaborated on cross-functional projects, delivering robust React applications and mobile solutions while mentoring junior developers."
+    },
+    {
+      "role": "Full Stack Developer",
+      "company": "Collabera Digital",
+      "period": "Aug 2024 - Dec 2024",
+      "description": "Built end-to-end web and mobile solutions with React Native and Node.js, integrating APIs, optimizing performance, and ensuring responsiveness across platforms."
+    },
+    {
+      "role": "Mid Software Engineer",
+      "company": "VeritasPay Philippines Inc.",
+      "period": "Feb 2023 - Aug 2024",
+      "description": "Maintained and improved web and mobile applications, implemented state management with MobX, and enhanced overall user experience and application performance."
+    },
+    {
+      "role": "Frontend Developer",
+      "company": "Freelance",
+      "period": "Nov 2017 - Jan 2023",
+      "description": "Delivered responsive web and mobile applications for various clients, leveraging modern JavaScript frameworks, state management solutions, and UI/UX best practices."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "school": "Systems Technology Institute",
+      "period": "2015 - 2019"
+    }
+  ],
+  "hobbies": ["Coding", "Gaming", "Reading", "Travelling"]
+}

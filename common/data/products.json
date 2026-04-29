@@ -1,0 +1,1816 @@
+[
+  {
+    "_id": "68ea5dd3fa4cd380dfcebeaa",
+    "product": "Bacon Lettuce Sandwich",
+    "description": "Crispy bacon, fresh lettuce, and juicy tomatoes in a toasted bread perfection.",
+    "image_url": "https://res.cloudinary.com/dx3atgryf/image/upload/v1759978513/baconlettuce_io6gn1.webp",
+    "category": "Sandwiches",
+    "is_available": true,
+    "rating": 4.2,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Bacon", "Bell Peppers", "Mozzarella ", "Onions"],
+    "variants": [
+      { "size": "Large", "price": 449, "_id": "690f379dba7d2b5c8f38c135" },
+      { "size": "Regular", "price": 349, "_id": "690f379dba7d2b5c8f38c136" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.315Z",
+    "updatedAt": "2025-11-08T12:29:17.315Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebeab",
+    "product": "Grilled Cheese Sandwich",
+    "description": "Golden toasted bread with melted cheddar and mozzarella cheese.",
+    "image_url": "https://res.cloudinary.com/dx3atgryf/image/upload/v1759978514/grilledcheese_itdav9.webp",
+    "category": "Sandwiches",
+    "is_available": true,
+    "rating": 3.9,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Cheddar ", "Garlic", "Mozzarella ", "Tomato Sauce"],
+    "variants": [
+      { "size": "Large", "price": 399, "_id": "690f379dba7d2b5c8f38c138" },
+      { "size": "Regular", "price": 299, "_id": "690f379dba7d2b5c8f38c139" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.316Z",
+    "updatedAt": "2025-11-08T12:29:17.316Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebeb2",
+    "product": "Apple Pie",
+    "description": "Classic apple pie with cinnamon-spiced filling and a flaky crust.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/desserts/applepie.webp",
+    "category": "Desserts",
+    "is_available": true,
+    "rating": 4.2,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Apples",
+      "Sugar",
+      "Cinnamon",
+      "Butter",
+      "Pie crust",
+      "Nutmeg"
+    ],
+    "variants": [
+      { "size": "Slice", "price": 150, "_id": "690f379dba7d2b5c8f38c13b" },
+      { "size": "Mini Pie", "price": 280, "_id": "690f379dba7d2b5c8f38c13c" },
+      { "size": "Whole Pie", "price": 850, "_id": "690f379dba7d2b5c8f38c13d" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.316Z",
+    "updatedAt": "2025-11-08T12:29:17.316Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebeb9",
+    "product": "Beef Fried Rice",
+    "description": "Fragrant fried rice topped with juicy beef slices and green onions.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/friedrice/beef.webp",
+    "category": "Fried Rice",
+    "is_available": true,
+    "rating": 4.9,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Rice",
+      "Beef",
+      "Vegetables",
+      "Garlic",
+      "Egg",
+      "Oil",
+      "Soy sauce",
+      "Spices"
+    ],
+    "variants": [
+      { "size": "Variant 1", "price": 170, "_id": "690f379dba7d2b5c8f38c13f" },
+      { "size": "Variant 2", "price": 220, "_id": "690f379dba7d2b5c8f38c140" },
+      { "size": "Variant 3", "price": 240, "_id": "690f379dba7d2b5c8f38c141" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.316Z",
+    "updatedAt": "2025-11-08T12:29:17.316Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebebb",
+    "product": "Chicken Fried Rice",
+    "description": "Fluffy fried rice with tender chicken chunks, vegetables, and soy sauce.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/friedrice/chicken.webp",
+    "category": "Fried Rice",
+    "is_available": true,
+    "rating": 4.6,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Rice",
+      "Chicken",
+      "Vegetables",
+      "Garlic",
+      "Egg",
+      "Oil",
+      "Soy sauce",
+      "Spices"
+    ],
+    "variants": [
+      { "size": "Variant 1", "price": 170, "_id": "690f379dba7d2b5c8f38c143" },
+      { "size": "Variant 2", "price": 220, "_id": "690f379dba7d2b5c8f38c144" },
+      { "size": "Variant 3", "price": 240, "_id": "690f379dba7d2b5c8f38c145" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.316Z",
+    "updatedAt": "2025-11-08T12:29:17.316Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebec5",
+    "product": "Double Cheeseburger",
+    "description": "Two beef patties with double cheddar cheese and fresh toppings",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/hamburgers/doublecheese.webp",
+    "category": "Hamburgers",
+    "is_available": true,
+    "rating": 4.8,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Double beef patties",
+      "Double cheddar cheese",
+      "Mozzarella cheese",
+      "Lettuce",
+      "Tomatoes",
+      "Pickles",
+      "Onions"
+    ],
+    "variants": [
+      { "size": "Small", "price": 349, "_id": "690f379dba7d2b5c8f38c147" },
+      { "size": "Medium", "price": 399, "_id": "690f379dba7d2b5c8f38c148" },
+      { "size": "Large", "price": 449, "_id": "690f379dba7d2b5c8f38c149" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.316Z",
+    "updatedAt": "2025-11-08T12:29:17.316Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebeac",
+    "product": "Chicken Pesto Sandwich",
+    "description": "Grilled chicken and fresh mozzarella with flavorful basil pesto.",
+    "image_url": "https://res.cloudinary.com/dx3atgryf/image/upload/v1759978513/grilledchicken_sdvpxt.webp",
+    "category": "Sandwiches",
+    "is_available": true,
+    "rating": 5,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Basil", "Chicken", "Garlic", "Mozzarella "],
+    "variants": [
+      { "size": "Large", "price": 469, "_id": "690f379dba7d2b5c8f38c14b" },
+      { "size": "Regular", "price": 369, "_id": "690f379dba7d2b5c8f38c14c" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.316Z",
+    "updatedAt": "2025-11-08T12:29:17.316Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebead",
+    "product": "Pulled Pork Sandwich",
+    "description": "Tender pulled pork topped with tangy BBQ sauce and crisp coleslaw.",
+    "image_url": "https://res.cloudinary.com/dx3atgryf/image/upload/v1759978514/pulledpork_c79lvs.webp",
+    "category": "Sandwiches",
+    "is_available": true,
+    "rating": 5,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Chicken", "Garlic", "Ham", "Tomato Sauce"],
+    "variants": [
+      { "size": "Large", "price": 499, "_id": "690f379dba7d2b5c8f38c14e" },
+      { "size": "Regular", "price": 399, "_id": "690f379dba7d2b5c8f38c14f" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.316Z",
+    "updatedAt": "2025-11-08T12:29:17.316Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebeaf",
+    "product": "Tiramisu",
+    "description": "Classic Italian dessert layered with espresso-soaked ladyfingers and mascarpone cream.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/desserts/tiramisu.webp",
+    "category": "Desserts",
+    "is_available": true,
+    "rating": 4.2,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Ladyfingers",
+      "Espresso",
+      "Mascarpone cheese",
+      "Eggs",
+      "Sugar",
+      "Cocoa powder"
+    ],
+    "variants": [
+      { "size": "Cup", "price": 149, "_id": "690f379dba7d2b5c8f38c151" },
+      { "size": "Slice", "price": 249, "_id": "690f379dba7d2b5c8f38c152" },
+      { "size": "Whole Cake", "price": 899, "_id": "690f379dba7d2b5c8f38c153" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.316Z",
+    "updatedAt": "2025-11-08T12:29:17.316Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebeb7",
+    "product": "Blueberry Muffin",
+    "description": "Moist muffin loaded with fresh blueberries.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/pastries/blueberry.webp",
+    "category": "Pastries",
+    "is_available": true,
+    "rating": 4.7,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Flour",
+      "Blueberries",
+      "Milk",
+      "Sugar",
+      "Eggs",
+      "Baking powder"
+    ],
+    "variants": [
+      { "size": "Variant 1", "price": 2.49, "_id": "690f379dba7d2b5c8f38c155" },
+      { "size": "Variant 2", "price": 8.99, "_id": "690f379dba7d2b5c8f38c156" },
+      { "size": "Variant 3", "price": 15.99, "_id": "690f379dba7d2b5c8f38c157" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.316Z",
+    "updatedAt": "2025-11-08T12:29:17.316Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebeb8",
+    "product": "Special Garlic Fried Rice",
+    "description": "Savory garlic fried rice with a hint of butter and freshly chopped parsley.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/friedrice/garlic.webp",
+    "category": "Fried Rice",
+    "is_available": true,
+    "rating": 4.9,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Rice",
+      "Garlic",
+      "Butter",
+      "Parsley",
+      "Egg",
+      "Oil",
+      "Spices"
+    ],
+    "variants": [
+      { "size": "Variant 1", "price": 160, "_id": "690f379dba7d2b5c8f38c159" },
+      { "size": "Variant 2", "price": 210, "_id": "690f379dba7d2b5c8f38c15a" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.316Z",
+    "updatedAt": "2025-11-08T12:29:17.316Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebebf",
+    "product": "Classic Burger",
+    "description": "Juicy beef patty with cheese and lettuce",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/hamburgers/classic.webp",
+    "category": "Hamburgers",
+    "is_available": true,
+    "rating": 4.2,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Beef", "Mozzarella ", "Onions", "Tomato Sauce"],
+    "variants": [
+      { "size": "Small", "price": 299, "_id": "690f379dba7d2b5c8f38c15c" },
+      { "size": "Medium", "price": 349, "_id": "690f379dba7d2b5c8f38c15d" },
+      { "size": "Large", "price": 399, "_id": "690f379dba7d2b5c8f38c15e" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.316Z",
+    "updatedAt": "2025-11-08T12:29:17.316Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebec0",
+    "product": "Quarter Pounder",
+    "description": "Beef patty with special sauce and toppings",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/hamburgers/quarter.webp",
+    "category": "Hamburgers",
+    "is_available": true,
+    "rating": 4.5,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Beef patty",
+      "Cheddar cheese",
+      "Lettuce",
+      "Tomatoes",
+      "Pickles",
+      "Special sauce",
+      "Sesame bun"
+    ],
+    "variants": [
+      { "size": "Single", "price": 329, "_id": "690f379dba7d2b5c8f38c160" },
+      { "size": "Double", "price": 389, "_id": "690f379dba7d2b5c8f38c161" },
+      { "size": "Triple", "price": 459, "_id": "690f379dba7d2b5c8f38c162" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.316Z",
+    "updatedAt": "2025-11-08T12:29:17.316Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebec4",
+    "product": "Bacon Cheese Burger",
+    "description": "Juicy beef patty with melted cheese and crispy bacon",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/hamburgers/bacon.webp",
+    "category": "Hamburgers",
+    "is_available": true,
+    "rating": 4.6,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Beef patty",
+      "Bacon",
+      "Cheddar cheese",
+      "Mozzarella cheese",
+      "Lettuce",
+      "Tomatoes",
+      "Onions"
+    ],
+    "variants": [
+      { "size": "Small", "price": 319, "_id": "690f379dba7d2b5c8f38c164" },
+      { "size": "Medium", "price": 369, "_id": "690f379dba7d2b5c8f38c165" },
+      { "size": "Large", "price": 419, "_id": "690f379dba7d2b5c8f38c166" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.316Z",
+    "updatedAt": "2025-11-08T12:29:17.316Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebea9",
+    "product": "ClubHouse Sandwich",
+    "description": "A triple-decker classic with layers of savory turkey, crispy bacon, fresh lettuce, and ripe tomatoes.",
+    "image_url": "https://res.cloudinary.com/dx3atgryf/image/upload/v1759978559/clubhouse_fxqgnx.webp",
+    "category": "Sandwiches",
+    "is_available": true,
+    "rating": 4,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Bacon", "Ham", "Mozzarella ", "Onions"],
+    "variants": [
+      { "size": "Large", "price": 499, "_id": "690f379dba7d2b5c8f38c168" },
+      { "size": "Regular", "price": 399, "_id": "690f379dba7d2b5c8f38c169" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.316Z",
+    "updatedAt": "2025-11-08T12:29:17.316Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebeae",
+    "product": "Chocolate Lava Cake",
+    "description": "Warm chocolate cake with a gooey molten center served with vanilla ice cream.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/desserts/chocolavacake.webp",
+    "category": "Desserts",
+    "is_available": true,
+    "rating": 4.8,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Dark chocolate",
+      "Butter",
+      "Sugar",
+      "Eggs",
+      "Flour",
+      "Vanilla ice cream"
+    ],
+    "variants": [
+      {
+        "size": "Single Serve",
+        "price": 199,
+        "_id": "690f379dba7d2b5c8f38c16b"
+      },
+      {
+        "size": "Double Serve",
+        "price": 349,
+        "_id": "690f379dba7d2b5c8f38c16c"
+      },
+      { "size": "Family Pack", "price": 599, "_id": "690f379dba7d2b5c8f38c16d" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.316Z",
+    "updatedAt": "2025-11-08T12:29:17.316Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebeb4",
+    "product": "Chocolate Danish",
+    "description": "Soft pastry filled with rich chocolate and topped with glaze.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/pastries/chocolatedanish.webp",
+    "category": "Pastries",
+    "is_available": true,
+    "rating": 4.1,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Puff pastry", "Dark chocolate", "Milk", "Sugar glaze"],
+    "variants": [
+      { "size": "Variant 1", "price": 2.99, "_id": "690f379dba7d2b5c8f38c16f" },
+      { "size": "Variant 2", "price": 4.49, "_id": "690f379dba7d2b5c8f38c170" },
+      { "size": "Variant 3", "price": 21.99, "_id": "690f379dba7d2b5c8f38c171" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.316Z",
+    "updatedAt": "2025-11-08T12:29:17.316Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebebc",
+    "product": "Spicy Kimchi Fried Rice",
+    "description": "Tangy and spicy kimchi fried rice with a fried egg on top.",
+    "image_url": "https://res.cloudinary.com/dx3atgryf/image/upload/v1759977817/kimchi_lvrrmx.webp",
+    "category": "Fried Rice",
+    "is_available": true,
+    "rating": 4.3,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Rice", "Kimchi", "Egg", "Vegetables", "Oil", "Spices"],
+    "variants": [
+      { "size": "Variant 1", "price": 180, "_id": "690f379dba7d2b5c8f38c173" },
+      { "size": "Variant 2", "price": 230, "_id": "690f379dba7d2b5c8f38c174" },
+      { "size": "Variant 3", "price": 250, "_id": "690f379dba7d2b5c8f38c175" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.316Z",
+    "updatedAt": "2025-11-08T12:29:17.316Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebeb0",
+    "product": "Ice Cream Sundae",
+    "description": "Vanilla ice cream topped with chocolate syrup, whipped cream, and nuts.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/desserts/icecreamsundae.webp",
+    "category": "Desserts",
+    "is_available": true,
+    "rating": 4.2,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Vanilla ice cream",
+      "Chocolate syrup",
+      "Whipped cream",
+      "Chopped nuts",
+      "Cherry topping"
+    ],
+    "variants": [
+      { "size": "Variant 1", "price": 120, "_id": "690f379dba7d2b5c8f38c177" },
+      { "size": "Variant 2", "price": 145, "_id": "690f379dba7d2b5c8f38c178" },
+      { "size": "Variant 3", "price": 155, "_id": "690f379dba7d2b5c8f38c179" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebeb1",
+    "product": "Brownie with Ice Cream",
+    "description": "Rich fudgy brownie topped with a scoop of vanilla ice cream and chocolate sauce.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/desserts/browniewithicecream.webp",
+    "category": "Desserts",
+    "is_available": true,
+    "rating": 4.2,
+    "discount_percentage": 10,
+    "start_date": "2025-10-03T00:00:00.000Z",
+    "end_date": "2025-11-02T00:00:00.000Z",
+    "ingredients": [
+      "Dark chocolate",
+      "Butter",
+      "Sugar",
+      "Eggs",
+      "Flour",
+      "Vanilla ice cream",
+      "Chocolate syrup"
+    ],
+    "variants": [
+      { "size": "Single", "price": 180, "_id": "690f379dba7d2b5c8f38c17b" },
+      { "size": "Double", "price": 320, "_id": "690f379dba7d2b5c8f38c17c" },
+      { "size": "Variant 3", "price": 20, "_id": "690f379dba7d2b5c8f38c17d" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebeb3",
+    "product": "Butter Croissant",
+    "description": "Flaky buttery croissant, perfect for breakfast or snacks.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/pastries/croissant.webp",
+    "category": "Pastries",
+    "is_available": true,
+    "rating": 4,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "All-purpose flour",
+      "Butter",
+      "Milk",
+      "Yeast",
+      "Sugar",
+      "Salt"
+    ],
+    "variants": [
+      { "size": "Variant 1", "price": 2.49, "_id": "690f379dba7d2b5c8f38c17f" },
+      { "size": "Variant 2", "price": 3.99, "_id": "690f379dba7d2b5c8f38c180" },
+      { "size": "Variant 3", "price": 18.99, "_id": "690f379dba7d2b5c8f38c181" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebeb5",
+    "product": "Cheese Roll",
+    "description": "Freshly baked roll stuffed with savory cheese.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/pastries/cheeseroll.webp",
+    "category": "Pastries",
+    "is_available": true,
+    "rating": 4.7,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Bread flour",
+      "Cheddar cheese",
+      "Butter",
+      "Eggs",
+      "Sugar",
+      "Yeast"
+    ],
+    "variants": [
+      { "size": "Variant 1", "price": 2.79, "_id": "690f379dba7d2b5c8f38c183" },
+      { "size": "Variant 2", "price": 4.99, "_id": "690f379dba7d2b5c8f38c184" },
+      { "size": "Variant 3", "price": 13.99, "_id": "690f379dba7d2b5c8f38c185" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebeb6",
+    "product": "Apple Strudel",
+    "description": "Delicate pastry filled with cinnamon apple slices.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/pastries/applestrudel.webp",
+    "category": "Pastries",
+    "is_available": true,
+    "rating": 4.4,
+    "discount_percentage": 5,
+    "start_date": "2025-10-03T00:00:00.000Z",
+    "end_date": "2025-11-02T00:00:00.000Z",
+    "ingredients": ["Puff pastry", "Apples", "Cinnamon", "Sugar", "Butter"],
+    "variants": [
+      { "size": "Variant 1", "price": 3.99, "_id": "690f379dba7d2b5c8f38c187" },
+      {
+        "size": "Variant 2",
+        "price": 14.99,
+        "_id": "690f379dba7d2b5c8f38c188"
+      },
+      { "size": "Variant 3", "price": 24.99, "_id": "690f379dba7d2b5c8f38c189" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebeba",
+    "product": "Classic Yang Chow Fried Rice",
+    "description": "Stir-fried rice with shrimp, BBQ pork, peas, and egg.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/friedrice/yawchow.webp",
+    "category": "Fried Rice",
+    "is_available": true,
+    "rating": 4.2,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Rice",
+      "Shrimp",
+      "BBQ Pork",
+      "Peas",
+      "Egg",
+      "Vegetables",
+      "Oil",
+      "Spices"
+    ],
+    "variants": [
+      { "size": "Variant 1", "price": 170, "_id": "690f379dba7d2b5c8f38c18b" },
+      { "size": "Variant 2", "price": 220, "_id": "690f379dba7d2b5c8f38c18c" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ea5dd3fa4cd380dfcebec3",
+    "product": "Cheese Burger",
+    "description": "Juicy beef patty topped with cheddar cheese, lettuce, tomato, and special sauce",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/hamburgers/cheese.webp",
+    "category": "Hamburgers",
+    "is_available": true,
+    "rating": 4.5,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Beef patty",
+      "Cheddar cheese",
+      "Mozzarella cheese",
+      "Onions",
+      "Tomatoes",
+      "Lettuce",
+      "Special sauce"
+    ],
+    "variants": [
+      { "size": "Small", "price": 299, "_id": "690f379dba7d2b5c8f38c18e" },
+      { "size": "Medium", "price": 349, "_id": "690f379dba7d2b5c8f38c18f" },
+      { "size": "Large", "price": 399, "_id": "690f379dba7d2b5c8f38c190" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ec37219f296da925cebea8",
+    "product": "Herb Butter Rolls",
+    "description": "Soft dinner rolls infused with butter and mixed herbs.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/breads/herb_butter_rolls.webp",
+    "category": "Breads",
+    "is_available": true,
+    "rating": 4.4,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Flour", "Butter", "Mixed Herbs", "Milk"],
+    "variants": [
+      { "size": "Variant 1", "price": 99, "_id": "690f379dba7d2b5c8f38c192" },
+      { "size": "Variant 2", "price": 159, "_id": "690f379dba7d2b5c8f38c193" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ec425622e1137a61cebea8",
+    "product": "Mexican Seafood Tacos",
+    "description": "Crispy tacos filled with shrimp, scallops, and spicy mayo",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/seafoods/tacos.webp",
+    "category": "Seafoods",
+    "is_available": true,
+    "rating": 4.4,
+    "discount_percentage": 5,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Shrimp", "Scallops", "Tortilla", "Spicy Mayo", "Cabbage"],
+    "variants": [
+      { "size": "Variant 1", "price": 320, "_id": "690f379dba7d2b5c8f38c195" },
+      { "size": "Variant 2", "price": 550, "_id": "690f379dba7d2b5c8f38c196" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ec425622e1137a61cebeab",
+    "product": "Scallop Delight",
+    "description": "Pan-seared scallops served over creamy mashed potatoes and herbs",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/seafoods/scallops.webp",
+    "category": "Seafoods",
+    "is_available": true,
+    "rating": 4.8,
+    "discount_percentage": 8,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Scallops", "Butter", "Garlic", "Potatoes", "Thyme"],
+    "variants": [
+      { "size": "Variant 1", "price": 620, "_id": "690f379dba7d2b5c8f38c198" },
+      { "size": "Variant 2", "price": 890, "_id": "690f379dba7d2b5c8f38c199" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ec425622e1137a61cebea5",
+    "product": "Lobster King",
+    "description": "Succulent lobster tail served with garlic butter and sides",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/seafoods/lobster.webp",
+    "category": "Seafoods",
+    "is_available": true,
+    "rating": 4.9,
+    "discount_percentage": 10,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Lobster", "Garlic", "Butter", "Parsley", "Lemon"],
+    "variants": [
+      { "size": "Variant 1", "price": 780, "_id": "690f379dba7d2b5c8f38c19b" },
+      { "size": "Variant 2", "price": 1200, "_id": "690f379dba7d2b5c8f38c19c" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ec425622e1137a61cebea9",
+    "product": "Calamari Rings",
+    "description": "Crispy fried squid rings served with garlic aioli dip",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/seafoods/calamari.webp",
+    "category": "Seafoods",
+    "is_available": true,
+    "rating": 4.3,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Squid", "Breadcrumbs", "Garlic", "Aioli", "Lemon"],
+    "variants": [
+      { "size": "Variant 1", "price": 280, "_id": "690f379dba7d2b5c8f38c19e" },
+      { "size": "Variant 2", "price": 480, "_id": "690f379dba7d2b5c8f38c19f" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ec425622e1137a61cebea4",
+    "product": "Grilled Salmon",
+    "description": "Perfectly grilled salmon fillet with lemon butter sauce",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/seafoods/salmon.webp",
+    "category": "Seafoods",
+    "is_available": true,
+    "rating": 4.6,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Salmon", "Lemon", "Garlic", "Butter", "Parsley"],
+    "variants": [
+      { "size": "Variant 1", "price": 450, "_id": "690f379dba7d2b5c8f38c1a1" },
+      { "size": "Variant 2", "price": 650, "_id": "690f379dba7d2b5c8f38c1a2" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ec425622e1137a61cebea6",
+    "product": "Seafood Paella",
+    "description": "Spanish-style rice with shrimp, mussels, and squid in saffron sauce",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/seafoods/paella.webp",
+    "category": "Seafoods",
+    "is_available": true,
+    "rating": 4.7,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Shrimp", "Mussels", "Squid", "Rice", "Saffron"],
+    "variants": [
+      { "size": "Variant 1", "price": 560, "_id": "690f379dba7d2b5c8f38c1a4" },
+      { "size": "Variant 2", "price": 950, "_id": "690f379dba7d2b5c8f38c1a5" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ec425622e1137a61cebea7",
+    "product": "Garlic Butter Shrimp",
+    "description": "Juicy shrimp sautéed in garlic butter and herbs",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/seafoods/shrimp.webp",
+    "category": "Seafoods",
+    "is_available": true,
+    "rating": 4.5,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Shrimp", "Garlic", "Butter", "Parsley", "Olive Oil"],
+    "variants": [
+      { "size": "Variant 1", "price": 380, "_id": "690f379dba7d2b5c8f38c1a7" },
+      { "size": "Variant 2", "price": 520, "_id": "690f379dba7d2b5c8f38c1a8" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ec425622e1137a61cebeaa",
+    "product": "Fish and Chips",
+    "description": "Golden-battered fish fillet with crispy fries and tartar sauce",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/seafoods/fishandchips.webp",
+    "category": "Seafoods",
+    "is_available": true,
+    "rating": 4.6,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["White Fish", "Potatoes", "Tartar Sauce", "Lemon", "Salt"],
+    "variants": [
+      { "size": "Variant 1", "price": 390, "_id": "690f379dba7d2b5c8f38c1aa" },
+      { "size": "Variant 2", "price": 580, "_id": "690f379dba7d2b5c8f38c1ab" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ec425622e1137a61cebeac",
+    "product": "Seafood Platter Supreme",
+    "description": "A feast of shrimp, squid, fish, and scallops served with sauces",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/seafoods/platter.webp",
+    "category": "Seafoods",
+    "is_available": true,
+    "rating": 4.9,
+    "discount_percentage": 15,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Shrimp", "Squid", "Fish", "Scallops", "Garlic Butter"],
+    "variants": [
+      { "size": "Variant 1", "price": 950, "_id": "690f379dba7d2b5c8f38c1ad" },
+      { "size": "Variant 2", "price": 1450, "_id": "690f379dba7d2b5c8f38c1ae" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ec58164d17a23fcacebea6",
+    "product": "Coffee",
+    "description": "Hot brewed coffee, perfect to energize your day",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/beverages/coffee.webp",
+    "category": "Beverages",
+    "is_available": true,
+    "rating": 4.8,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Coffee Beans", "Water"],
+    "variants": [
+      { "size": "Variant 1", "price": 100, "_id": "690f379dba7d2b5c8f38c1b0" },
+      { "size": "Variant 2", "price": 180, "_id": "690f379dba7d2b5c8f38c1b1" },
+      { "size": "Variant 3", "price": 250, "_id": "690f379dba7d2b5c8f38c1b2" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ec58164d17a23fcacebea7",
+    "product": "Four Seasons Juice",
+    "description": "A refreshing mix of four different fruits",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/beverages/fourseasons.webp",
+    "category": "Beverages",
+    "is_available": true,
+    "rating": 4.6,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Apple", "Orange", "Pineapple", "Grapes"],
+    "variants": [
+      { "size": "Variant 1", "price": 200, "_id": "690f379dba7d2b5c8f38c1b4" },
+      { "size": "Variant 2", "price": 350, "_id": "690f379dba7d2b5c8f38c1b5" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ec58164d17a23fcacebea8",
+    "product": "Pineapple Juice",
+    "description": "Freshly pressed pineapple juice",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/beverages/pineapple.webp",
+    "category": "Beverages",
+    "is_available": true,
+    "rating": 4.7,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Pineapple"],
+    "variants": [
+      { "size": "Variant 1", "price": 180, "_id": "690f379dba7d2b5c8f38c1b7" },
+      { "size": "Variant 2", "price": 300, "_id": "690f379dba7d2b5c8f38c1b8" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ec58164d17a23fcacebea9",
+    "product": "Mango Juice",
+    "description": "Sweet and tropical mango juice",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/beverages/mango.webp",
+    "category": "Beverages",
+    "is_available": true,
+    "rating": 4.8,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Mango"],
+    "variants": [
+      { "size": "Variant 1", "price": 180, "_id": "690f379dba7d2b5c8f38c1ba" },
+      { "size": "Variant 2", "price": 320, "_id": "690f379dba7d2b5c8f38c1bb" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ec58164d17a23fcacebea4",
+    "product": "Iced Tea",
+    "description": "Refreshing iced tea with lemon flavor",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/beverages/icedtea.webp",
+    "category": "Beverages",
+    "is_available": true,
+    "rating": 4.6,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Water", "Tea Extract", "Sugar", "Lemon"],
+    "variants": [
+      { "size": "Variant 1", "price": 120, "_id": "690f379dba7d2b5c8f38c1bd" },
+      { "size": "Variant 2", "price": 180, "_id": "690f379dba7d2b5c8f38c1be" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ec58164d17a23fcacebea5",
+    "product": "Orange Juice",
+    "description": "Freshly squeezed orange juice",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/beverages/orange.webp",
+    "category": "Beverages",
+    "is_available": true,
+    "rating": 4.7,
+    "discount_percentage": 5,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Orange"],
+    "variants": [
+      { "size": "Variant 1", "price": 150, "_id": "690f379dba7d2b5c8f38c1c0" },
+      { "size": "Variant 2", "price": 220, "_id": "690f379dba7d2b5c8f38c1c1" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee44d814e4c70224cebea4",
+    "product": "Caesar Salad",
+    "description": "Crisp romaine lettuce with creamy Caesar dressing, croutons, and parmesan cheese.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/salads/caesar.webp",
+    "category": "Salads",
+    "is_available": true,
+    "rating": 4.7,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Romaine lettuce",
+      "Caesar dressing",
+      "Croutons",
+      "Parmesan cheese"
+    ],
+    "variants": [
+      { "size": "Variant 1", "price": 7.99, "_id": "690f379dba7d2b5c8f38c1c3" },
+      { "size": "Variant 2", "price": 10.99, "_id": "690f379dba7d2b5c8f38c1c4" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee44d814e4c70224cebea6",
+    "product": "Garden Fresh Salad",
+    "description": "A light and healthy salad with fresh greens, cherry tomatoes, cucumbers, and vinaigrette.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/salads/garden-fresh.webp",
+    "category": "Salads",
+    "is_available": true,
+    "rating": 4.6,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Mixed greens",
+      "Cherry tomatoes",
+      "Cucumber",
+      "Carrots",
+      "Vinaigrette dressing"
+    ],
+    "variants": [
+      { "size": "Variant 1", "price": 7.49, "_id": "690f379dba7d2b5c8f38c1c6" },
+      { "size": "Variant 2", "price": 10.49, "_id": "690f379dba7d2b5c8f38c1c7" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee44d814e4c70224cebea5",
+    "product": "Greek Salad",
+    "description": "A refreshing mix of cucumbers, tomatoes, olives, red onions, and feta cheese.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/salads/greek.webp",
+    "category": "Salads",
+    "is_available": true,
+    "rating": 4.8,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Cucumber",
+      "Tomatoes",
+      "Olives",
+      "Red onion",
+      "Feta cheese"
+    ],
+    "variants": [
+      { "size": "Variant 1", "price": 8.49, "_id": "690f379dba7d2b5c8f38c1c9" },
+      { "size": "Variant 2", "price": 11.99, "_id": "690f379dba7d2b5c8f38c1ca" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee44d814e4c70224cebea7",
+    "product": "Chicken Caesar Salad",
+    "description": "Grilled chicken breast over crisp romaine lettuce with creamy Caesar dressing.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/salads/chicken-caesar.webp",
+    "category": "Salads",
+    "is_available": true,
+    "rating": 4.9,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Romaine lettuce",
+      "Grilled chicken",
+      "Caesar dressing",
+      "Croutons",
+      "Parmesan cheese"
+    ],
+    "variants": [
+      { "size": "Variant 1", "price": 9.99, "_id": "690f379dba7d2b5c8f38c1cc" },
+      { "size": "Variant 2", "price": 12.99, "_id": "690f379dba7d2b5c8f38c1cd" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee44d814e4c70224cebea8",
+    "product": "Tuna Salad",
+    "description": "Flaky tuna with crisp vegetables, eggs, and light mayo dressing.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/salads/tuna.webp",
+    "category": "Salads",
+    "is_available": true,
+    "rating": 4.7,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Tuna flakes",
+      "Lettuce",
+      "Boiled egg",
+      "Tomato",
+      "Mayonnaise"
+    ],
+    "variants": [
+      { "size": "Variant 1", "price": 8.99, "_id": "690f379dba7d2b5c8f38c1cf" },
+      { "size": "Variant 2", "price": 11.99, "_id": "690f379dba7d2b5c8f38c1d0" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee44d814e4c70224cebea9",
+    "product": "Asian Sesame Salad",
+    "description": "Crunchy cabbage mix with grilled chicken, sesame dressing, and toasted almonds.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/salads/asian-sesame.webp",
+    "category": "Salads",
+    "is_available": true,
+    "rating": 4.8,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Cabbage mix",
+      "Grilled chicken",
+      "Sesame dressing",
+      "Toasted almonds",
+      "Green onions"
+    ],
+    "variants": [
+      { "size": "Variant 1", "price": 9.49, "_id": "690f379dba7d2b5c8f38c1d2" },
+      { "size": "Variant 2", "price": 12.49, "_id": "690f379dba7d2b5c8f38c1d3" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee476414e4c70224cebeaa",
+    "product": "Spaghetti Bolognese",
+    "description": "Classic Italian pasta with rich tomato-meat sauce simmered to perfection.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/pasta/spaghetti-bolognese.webp",
+    "category": "Pasta",
+    "is_available": true,
+    "rating": 4.8,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Spaghetti noodles",
+      "Ground beef",
+      "Tomato sauce",
+      "Garlic",
+      "Onion",
+      "Parmesan cheese"
+    ],
+    "variants": [
+      {
+        "size": "Variant 1",
+        "price": 10.99,
+        "_id": "690f379dba7d2b5c8f38c1d5"
+      },
+      { "size": "Variant 2", "price": 16.99, "_id": "690f379dba7d2b5c8f38c1d6" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee476414e4c70224cebeac",
+    "product": "Seafood Marinara",
+    "description": "Fresh shrimp, squid, and mussels tossed in a zesty tomato sauce with spaghetti.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/pasta/seafood-marinara.webp",
+    "category": "Pasta",
+    "is_available": true,
+    "rating": 4.7,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Shrimp",
+      "Squid",
+      "Mussels",
+      "Tomato sauce",
+      "Garlic",
+      "Basil"
+    ],
+    "variants": [
+      {
+        "size": "Variant 1",
+        "price": 13.49,
+        "_id": "690f379dba7d2b5c8f38c1d8"
+      },
+      { "size": "Variant 2", "price": 19.99, "_id": "690f379dba7d2b5c8f38c1d9" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee476414e4c70224cebead",
+    "product": "Chicken Alfredo",
+    "description": "Tender chicken strips in creamy Alfredo sauce over fettuccine noodles.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/pasta/chicken-alfredo.webp",
+    "category": "Pasta",
+    "is_available": true,
+    "rating": 4.9,
+    "discount_percentage": 15,
+    "start_date": "2025-10-05T00:00:00.000Z",
+    "end_date": "2025-11-05T00:00:00.000Z",
+    "ingredients": [
+      "Fettuccine",
+      "Chicken breast",
+      "Cream",
+      "Garlic",
+      "Butter",
+      "Parmesan cheese"
+    ],
+    "variants": [
+      {
+        "size": "Variant 1",
+        "price": 12.99,
+        "_id": "690f379dba7d2b5c8f38c1db"
+      },
+      { "size": "Variant 2", "price": 17.99, "_id": "690f379dba7d2b5c8f38c1dc" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee476414e4c70224cebeaf",
+    "product": "Lasagna al Forno",
+    "description": "Layered pasta with rich beef ragu, bechamel sauce, and melted cheese baked to perfection.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/pasta/lasagna.webp",
+    "category": "Pasta",
+    "is_available": true,
+    "rating": 5,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Pasta sheets",
+      "Ground beef",
+      "Tomato sauce",
+      "Bechamel",
+      "Mozzarella cheese"
+    ],
+    "variants": [
+      { "size": "Variant 1", "price": 9.99, "_id": "690f379dba7d2b5c8f38c1de" },
+      { "size": "Variant 2", "price": 32.99, "_id": "690f379dba7d2b5c8f38c1df" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee476414e4c70224cebeab",
+    "product": "Creamy Carbonara",
+    "description": "Rich and creamy pasta with bacon, eggs, and parmesan cheese for a velvety finish.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/pasta/creamy-carbonara.webp",
+    "category": "Pasta",
+    "is_available": true,
+    "rating": 4.9,
+    "discount_percentage": 10,
+    "start_date": "2025-10-10T00:00:00.000Z",
+    "end_date": "2025-11-10T00:00:00.000Z",
+    "ingredients": [
+      "Spaghetti",
+      "Bacon",
+      "Eggs",
+      "Cream",
+      "Parmesan cheese",
+      "Black pepper"
+    ],
+    "variants": [
+      {
+        "size": "Variant 1",
+        "price": 11.49,
+        "_id": "690f379dba7d2b5c8f38c1e1"
+      },
+      { "size": "Variant 2", "price": 15.99, "_id": "690f379dba7d2b5c8f38c1e2" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee476414e4c70224cebeae",
+    "product": "Pesto Pasta",
+    "description": "Fragrant basil pesto sauce tossed with al dente pasta and topped with parmesan.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/pasta/pesto-pasta.webp",
+    "category": "Pasta",
+    "is_available": true,
+    "rating": 4.6,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Basil leaves",
+      "Olive oil",
+      "Garlic",
+      "Pine nuts",
+      "Parmesan cheese",
+      "Pasta"
+    ],
+    "variants": [
+      {
+        "size": "Variant 1",
+        "price": 10.49,
+        "_id": "690f379dba7d2b5c8f38c1e4"
+      },
+      { "size": "Variant 2", "price": 14.49, "_id": "690f379dba7d2b5c8f38c1e5" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee7dd4a0bc61536acebea8",
+    "product": "T-Bone Steak",
+    "description": "Classic T-Bone with rich flavor and tender texture, perfect for steak enthusiasts craving both the strip and tenderloin in one cut.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/steaks/tbone.webp",
+    "category": "Steaks",
+    "is_available": true,
+    "rating": 4.8,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["T-Bone cut", "Salt", "Pepper", "Garlic butter"],
+    "variants": [
+      { "size": "Small", "price": 959.4, "_id": "690f379dba7d2b5c8f38c1e7" },
+      { "size": "Medium", "price": 1319.4, "_id": "690f379dba7d2b5c8f38c1e8" },
+      { "size": "Large", "price": 1739.4, "_id": "690f379dba7d2b5c8f38c1e9" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee7dd4a0bc61536acebea9",
+    "product": "Pepperoni Pizza",
+    "description": "Classic pizza topped with tomato sauce, mozzarella, and pepperoni slices — a timeless favorite.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/pizza/pepperoni.webp",
+    "category": "Pizzas",
+    "is_available": true,
+    "rating": 4.8,
+    "discount_percentage": 20,
+    "start_date": "2025-10-03T00:00:00.000Z",
+    "end_date": "2025-11-02T00:00:00.000Z",
+    "ingredients": ["Mozzarella", "Pepperoni", "Tomato Sauce"],
+    "variants": [
+      { "size": "12 inch", "price": 299, "_id": "690f379dba7d2b5c8f38c1eb" },
+      { "size": "18 inch", "price": 459, "_id": "690f379dba7d2b5c8f38c1ec" },
+      { "size": "24 inch", "price": 699, "_id": "690f379dba7d2b5c8f38c1ed" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee7dd4a0bc61536acebeaa",
+    "product": "Hawaiian Pizza",
+    "description": "Sweet and savory pizza topped with ham, pineapple, mozzarella, and tomato sauce — a delightful combination of flavors.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/pizza/hawaiian.webp",
+    "category": "Pizzas",
+    "is_available": true,
+    "rating": 4.5,
+    "discount_percentage": 25,
+    "start_date": "2025-10-03T00:00:00.000Z",
+    "end_date": "2025-11-02T00:00:00.000Z",
+    "ingredients": ["Ham", "Mozzarella", "Pineapple", "Tomato Sauce"],
+    "variants": [
+      { "size": "12 inch", "price": 319, "_id": "690f379dba7d2b5c8f38c1ef" },
+      { "size": "18 inch", "price": 479, "_id": "690f379dba7d2b5c8f38c1f0" },
+      { "size": "24 inch", "price": 719, "_id": "690f379dba7d2b5c8f38c1f1" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee7dd4a0bc61536acebeab",
+    "product": "Meat Lovers Pizza",
+    "description": "Loaded with pepperoni, ham, bacon, and sausage with melted mozzarella cheese on a rich tomato base.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/pizza/meat.webp",
+    "category": "Pizzas",
+    "is_available": true,
+    "rating": 4.7,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Bacon",
+      "Ham",
+      "Mozzarella",
+      "Pepperoni",
+      "Sausage",
+      "Tomato Sauce"
+    ],
+    "variants": [
+      { "size": "12 inch", "price": 349, "_id": "690f379dba7d2b5c8f38c1f3" },
+      { "size": "18 inch", "price": 529, "_id": "690f379dba7d2b5c8f38c1f4" },
+      { "size": "24 inch", "price": 799, "_id": "690f379dba7d2b5c8f38c1f5" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee7dd4a0bc61536acebea4",
+    "product": "Premium Steak",
+    "description": "Our Premium Steak is a tender ribeye masterpiece — seared to perfection and seasoned with sea salt, cracked black pepper, and a buttery glaze. Each bite delivers a melt-in-your-mouth experience with a rich, smoky aroma and juicy tenderness that defines fine dining.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/steaks/premium.webp",
+    "category": "Steaks",
+    "is_available": true,
+    "rating": 4.3,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Ribeye steak",
+      "Sea salt",
+      "Cracked black pepper",
+      "Butter glaze",
+      "Garlic",
+      "Rosemary sprig",
+      "Olive oil"
+    ],
+    "variants": [
+      { "size": "Small", "price": 12.99, "_id": "690f379dba7d2b5c8f38c1f7" },
+      { "size": "Medium", "price": 18.99, "_id": "690f379dba7d2b5c8f38c1f8" },
+      { "size": "Large", "price": 24.99, "_id": "690f379dba7d2b5c8f38c1f9" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee7dd4a0bc61536acebea6",
+    "product": "Ribeye Steak",
+    "description": "Juicy ribeye grilled to perfection, seasoned with classic herbs and spices for a restaurant-quality steak experience at home.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/steaks/ribeye.webp",
+    "category": "Steaks",
+    "is_available": true,
+    "rating": 4.9,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Ribeye cut", "Salt", "Pepper", "Garlic butter"],
+    "variants": [
+      { "size": "Small", "price": 400.99, "_id": "690f379dba7d2b5c8f38c1fb" },
+      { "size": "Medium", "price": 650.99, "_id": "690f379dba7d2b5c8f38c1fc" },
+      { "size": "Large", "price": 800.99, "_id": "690f379dba7d2b5c8f38c1fd" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee7dd4a0bc61536acebea7",
+    "product": "Roadhouse Steak",
+    "description": "Tender roadhouse-style steak with smoky seasoning, grilled to juicy perfection and packed with robust flavor.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/steaks/roadhouse.webp",
+    "category": "Steaks",
+    "is_available": true,
+    "rating": 4.7,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Beef steak cut",
+      "Salt",
+      "Black pepper",
+      "Smoky seasoning"
+    ],
+    "variants": [
+      { "size": "Small", "price": 839.4, "_id": "690f379dba7d2b5c8f38c1ff" },
+      { "size": "Medium", "price": 1199.4, "_id": "690f379dba7d2b5c8f38c200" },
+      { "size": "Large", "price": 1559.4, "_id": "690f379dba7d2b5c8f38c201" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee7dd4a0bc61536acebea5",
+    "product": "Classic Steak",
+    "description": "The Classic Steak captures the essence of timeless flavor — a perfectly grilled sirloin brushed with garlic butter and lightly charred for that signature crust. Juicy, flavorful, and comforting, it’s a steakhouse favorite that never disappoints.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/steaks/classic.webp",
+    "category": "Steaks",
+    "is_available": true,
+    "rating": 4.8,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Sirloin steak",
+      "Garlic butter",
+      "Sea salt",
+      "Cracked black pepper"
+    ],
+    "variants": [
+      { "size": "Small", "price": 340.99, "_id": "690f379dba7d2b5c8f38c203" },
+      { "size": "Medium", "price": 500.99, "_id": "690f379dba7d2b5c8f38c204" },
+      { "size": "Large", "price": 604.99, "_id": "690f379dba7d2b5c8f38c205" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee7f3aa0bc61536acebeb0",
+    "product": "Cheesy Pizza",
+    "description": "Extra cheesy pizza with a rich blend of mozzarella, cheddar, and parmesan on a golden crust. Perfect for cheese enthusiasts.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/pizza/cheesy.webp",
+    "category": "Pizzas",
+    "is_available": true,
+    "rating": 4.5,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Mozzarella", "Cheddar", "Parmesan", "Tomato Sauce"],
+    "variants": [
+      { "size": "12 inch", "price": 319, "_id": "690f379dba7d2b5c8f38c207" },
+      { "size": "18 inch", "price": 479, "_id": "690f379dba7d2b5c8f38c208" },
+      { "size": "24 inch", "price": 739, "_id": "690f379dba7d2b5c8f38c209" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee7f3aa0bc61536acebeac",
+    "product": "Margherita Pizza",
+    "description": "Fresh, sun-ripened tomatoes, fragrant basil, and creamy mozzarella on a golden, crispy crust. Classic Italian flavor in every bite.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/pizza/margherita.webp",
+    "category": "Pizzas",
+    "is_available": true,
+    "rating": 4.2,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Basil", "Mozzarella", "Tomato Sauce"],
+    "variants": [
+      { "size": "12 inch", "price": 309, "_id": "690f379dba7d2b5c8f38c20b" },
+      { "size": "18 inch", "price": 469, "_id": "690f379dba7d2b5c8f38c20c" },
+      { "size": "24 inch", "price": 729, "_id": "690f379dba7d2b5c8f38c20d" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee7f3aa0bc61536acebeaf",
+    "product": "Veggie Supreme Pizza",
+    "description": "Loaded with bell peppers, olives, onions, mushrooms, and tomatoes. A fresh and colorful veggie delight for every pizza lover.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/pizza/veggie.webp",
+    "category": "Pizzas",
+    "is_available": true,
+    "rating": 4.8,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Bell Peppers",
+      "Mozzarella",
+      "Mushrooms",
+      "Olives",
+      "Onions",
+      "Tomato Sauce"
+    ],
+    "variants": [
+      { "size": "12 inch", "price": 339, "_id": "690f379dba7d2b5c8f38c20f" },
+      { "size": "18 inch", "price": 499, "_id": "690f379dba7d2b5c8f38c210" },
+      { "size": "24 inch", "price": 759, "_id": "690f379dba7d2b5c8f38c211" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee7f3aa0bc61536acebead",
+    "product": "Mozzarella Pizza",
+    "description": "Classic cheesy delight with extra mozzarella on a tomato base. Creamy, melty, and perfect for cheese lovers.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/pizza/mozarella.webp",
+    "category": "Pizzas",
+    "is_available": true,
+    "rating": 4.4,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Mozzarella", "Tomato Sauce"],
+    "variants": [
+      { "size": "12 inch", "price": 289, "_id": "690f379dba7d2b5c8f38c213" },
+      { "size": "18 inch", "price": 439, "_id": "690f379dba7d2b5c8f38c214" },
+      { "size": "24 inch", "price": 689, "_id": "690f379dba7d2b5c8f38c215" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ee7f3aa0bc61536acebeae",
+    "product": "New York Style Pizza",
+    "description": "Thin, hand-tossed crust with a crisp edge and soft center, topped with rich tomato sauce and melted mozzarella. A true New York classic.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/pizza/newyork.webp",
+    "category": "Pizzas",
+    "is_available": true,
+    "rating": 4.6,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Basil", "Garlic", "Mozzarella", "Tomato Sauce"],
+    "variants": [
+      { "size": "12 inch", "price": 329, "_id": "690f379dba7d2b5c8f38c217" },
+      { "size": "18 inch", "price": 489, "_id": "690f379dba7d2b5c8f38c218" },
+      { "size": "24 inch", "price": 749, "_id": "690f379dba7d2b5c8f38c219" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ef330f35a3225adacebea4",
+    "product": "Strawberry Smoothie",
+    "description": "Fresh strawberries blended with yogurt and honey.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/beverages/strawberry-smoothie.webp",
+    "category": "Beverages",
+    "is_available": true,
+    "rating": 4.7,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Strawberries", "Yogurt", "Honey"],
+    "variants": [
+      { "size": "Variant 1", "price": 4.5, "_id": "690f379dba7d2b5c8f38c21b" },
+      { "size": "Variant 2", "price": 5.5, "_id": "690f379dba7d2b5c8f38c21c" },
+      { "size": "Variant 3", "price": 6.5, "_id": "690f379dba7d2b5c8f38c21d" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ef3e9a26c4fb3a34cebea4",
+    "product": "Strawberry Banana Smoothie",
+    "description": "A creamy blend of fresh strawberries, ripe bananas, and yogurt for a refreshing treat.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/smoothies/strawberry_banana.webp",
+    "category": "Smoothies",
+    "is_available": true,
+    "rating": 4.7,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Strawberries", "Banana", "Yogurt", "Honey"],
+    "variants": [
+      { "size": "Variant 1", "price": 4.99, "_id": "690f379dba7d2b5c8f38c21f" },
+      { "size": "Variant 2", "price": 6.99, "_id": "690f379dba7d2b5c8f38c220" },
+      { "size": "Variant 3", "price": 8.99, "_id": "690f379dba7d2b5c8f38c221" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ef3ecf26c4fb3a34cebea5",
+    "product": "Mango Pineapple Smoothie",
+    "description": "Tropical delight with fresh mango, pineapple, and coconut milk.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/smoothies/mango_pineapple.webp",
+    "category": "Smoothies",
+    "is_available": true,
+    "rating": 4.8,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Mango", "Pineapple", "Coconut Milk", "Ice"],
+    "variants": [
+      { "size": "Variant 1", "price": 5.49, "_id": "690f379dba7d2b5c8f38c223" },
+      { "size": "Variant 2", "price": 7.49, "_id": "690f379dba7d2b5c8f38c224" },
+      { "size": "Variant 3", "price": 9.49, "_id": "690f379dba7d2b5c8f38c225" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ef3ecf26c4fb3a34cebea6",
+    "product": "Blueberry Blast Smoothie",
+    "description": "Antioxidant-rich blueberries blended with banana and almond milk.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/smoothies/blueberry_blast.webp",
+    "category": "Smoothies",
+    "is_available": true,
+    "rating": 4.6,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Blueberries", "Banana", "Almond Milk", "Honey"],
+    "variants": [
+      { "size": "Variant 1", "price": 5.99, "_id": "690f379dba7d2b5c8f38c227" },
+      { "size": "Variant 2", "price": 7.99, "_id": "690f379dba7d2b5c8f38c228" },
+      { "size": "Variant 3", "price": 9.99, "_id": "690f379dba7d2b5c8f38c229" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ef3ecf26c4fb3a34cebea7",
+    "product": "Green Detox Smoothie",
+    "description": "A refreshing mix of spinach, kale, green apple, and lemon for a healthy boost.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/smoothies/green_detox.webp",
+    "category": "Smoothies",
+    "is_available": true,
+    "rating": 4.5,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Spinach", "Kale", "Green Apple", "Lemon", "Ginger"],
+    "variants": [
+      { "size": "Variant 1", "price": 6.49, "_id": "690f379dba7d2b5c8f38c22b" },
+      { "size": "Variant 2", "price": 8.49, "_id": "690f379dba7d2b5c8f38c22c" },
+      { "size": "Variant 3", "price": 10.49, "_id": "690f379dba7d2b5c8f38c22d" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.317Z",
+    "updatedAt": "2025-11-08T12:29:17.317Z"
+  },
+  {
+    "_id": "68ef3ecf26c4fb3a34cebea8",
+    "product": "Chocolate Peanut Butter Smoothie",
+    "description": "Indulgent chocolate with creamy peanut butter and banana for a rich treat.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/smoothies/chocolate_peanut_butter.webp",
+    "category": "Smoothies",
+    "is_available": true,
+    "rating": 4.9,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Chocolate", "Peanut Butter", "Banana", "Milk"],
+    "variants": [
+      { "size": "Variant 1", "price": 5.99, "_id": "690f379dba7d2b5c8f38c22f" },
+      { "size": "Variant 2", "price": 7.99, "_id": "690f379dba7d2b5c8f38c230" },
+      { "size": "Variant 3", "price": 9.99, "_id": "690f379dba7d2b5c8f38c231" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.318Z",
+    "updatedAt": "2025-11-08T12:29:17.318Z"
+  },
+  {
+    "_id": "68ef3f1026c4fb3a34cebea9",
+    "product": "Acai Berry Bowl",
+    "description": "A refreshing acai base topped with granola, banana, strawberries, and honey.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/bowls/acai_berry.webp",
+    "category": "Bowls",
+    "is_available": true,
+    "rating": 4.7,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Acai", "Granola", "Banana", "Strawberries", "Honey"],
+    "variants": [
+      { "size": "Variant 1", "price": 6.99, "_id": "690f379dba7d2b5c8f38c233" },
+      { "size": "Variant 2", "price": 8.99, "_id": "690f379dba7d2b5c8f38c234" },
+      { "size": "Variant 3", "price": 10.99, "_id": "690f379dba7d2b5c8f38c235" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.318Z",
+    "updatedAt": "2025-11-08T12:29:17.318Z"
+  },
+  {
+    "_id": "68ef3f1026c4fb3a34cebeaa",
+    "product": "Tropical Fruit Bowl",
+    "description": "A mix of fresh pineapple, mango, kiwi, and coconut flakes for a tropical delight.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/bowls/tropical_fruit.webp",
+    "category": "Bowls",
+    "is_available": true,
+    "rating": 4.6,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": ["Pineapple", "Mango", "Kiwi", "Coconut Flakes", "Mint"],
+    "variants": [
+      { "size": "Variant 1", "price": 6.49, "_id": "690f379dba7d2b5c8f38c237" },
+      { "size": "Variant 2", "price": 8.49, "_id": "690f379dba7d2b5c8f38c238" },
+      { "size": "Variant 3", "price": 10.49, "_id": "690f379dba7d2b5c8f38c239" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.318Z",
+    "updatedAt": "2025-11-08T12:29:17.318Z"
+  },
+  {
+    "_id": "68ef3f1026c4fb3a34cebeab",
+    "product": "Protein Power Bowl",
+    "description": "Packed with quinoa, grilled chicken, avocado, spinach, and a tangy dressing for a protein boost.",
+    "image_url": "https://raw.githubusercontent.com/ron-thecertifiedbomb/chicha_cdn_assets/main/cdn-assets/menus/bowls/protein_power.webp",
+    "category": "Bowls",
+    "is_available": true,
+    "rating": 4.8,
+    "discount_percentage": null,
+    "start_date": null,
+    "end_date": null,
+    "ingredients": [
+      "Quinoa",
+      "Grilled Chicken",
+      "Avocado",
+      "Spinach",
+      "Dressing"
+    ],
+    "variants": [
+      { "size": "Variant 1", "price": 8.99, "_id": "690f379dba7d2b5c8f38c23b" },
+      {
+        "size": "Variant 2",
+        "price": 10.99,
+        "_id": "690f379dba7d2b5c8f38c23c"
+      },
+      { "size": "Variant 3", "price": 12.99, "_id": "690f379dba7d2b5c8f38c23d" }
+    ],
+    "__v": 0,
+    "createdAt": "2025-11-08T12:29:17.318Z",
+    "updatedAt": "2025-11-08T12:29:17.318Z"
+  }
+]

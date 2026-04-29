@@ -1,0 +1,52 @@
+{
+  "solutions": [
+    {
+      "category": "Front-End Development",
+      "items": [
+        "Custom Website Design & Development: Build responsive, modern websites tailored to your brand.",
+        "Landing Pages & Portfolios: Fast-loading, visually appealing pages to showcase products or services.",
+        "Single Page Applications (SPA): Dynamic web apps using React or other modern frameworks.",
+        "UI/UX Optimization: Improve usability, navigation, and accessibility for a better user experience.",
+        "Interactive Web Features: Animations, interactive forms, sliders, and custom components.",
+        "Mobile-First & Responsive Design: Ensure websites look perfect on desktops, tablets, and phones."
+      ]
+    },
+    {
+      "category": "Back-End Development",
+      "items": [
+        "API Development: Build REST or GraphQL APIs for web and mobile applications.",
+        "Database Integration & Management: Connect websites to SQL, NoSQL, or cloud databases like Supabase or Firebase.",
+        "User Authentication & Security: Email/password login, social login, and magic link authentication.",
+        "Server-Side Logic & Automation: Handle business logic, workflows, and automated processes."
+      ]
+    },
+    {
+      "category": "Full-Stack Web Development",
+      "items": [
+        "Complete Web Applications: End-to-end development from front-end design to back-end functionality.",
+        "E-commerce Websites: Product catalogs, shopping carts, checkout systems, and admin dashboards.",
+        "SaaS Platforms & Web Tools: Subscription-based apps or internal business tools.",
+        "Admin Dashboards & Analytics Panels: Manage content, inventory, or user data efficiently."
+      ]
+    },
+    {
+      "category": "Specialized Services",
+      "items": [
+        "Progressive Web Apps (PWA): Apps that work offline and can be installed on devices like native apps.",
+        "Performance & SEO Optimization: Speed, accessibility, and search engine optimization.",
+        "Website Maintenance & Updates: Bug fixes, new feature implementation, and tech stack upgrades.",
+        "Migration Services: Move websites to new frameworks, servers, or hosting solutions.",
+        "Custom Components & Reusable Libraries: Create modular code for developers or teams."
+      ]
+    },
+    {
+      "category": "Consultancy & Coaching",
+      "items": [
+        "Technical Consultation: Recommend the best tech stack and development approach for your project.",
+        "Code Review & Optimization: Improve existing code quality, maintainability, and performance.",
+        "Workshops & Training: Teach React, Node.js, Supabase, or general web development skills."
+      ]
+    }
+  ],
+  "note": "I work closely with clients to understand their goals and deliver web solutions that are fast, secure, and visually appealing. Let's build something amazing together!"
+}

@@ -1,0 +1,82 @@
+{
+  "solutionsPitch": [
+    {
+      "category": "Web Experiences",
+      "items": [
+        {
+          "title": "Custom Websites & Landing Pages",
+          "description": "Engaging, responsive websites that showcase your brand and capture leads effectively."
+        },
+        {
+          "title": "Single Page Applications (SPA)",
+          "description": "Dynamic, fast-loading apps that give your users a seamless, interactive experience."
+        },
+        {
+          "title": "UI/UX Optimization",
+          "description": "Designs that delight users, improve navigation, and boost conversion rates."
+        }
+      ]
+    },
+    {
+      "category": "Performance & Visibility",
+      "items": [
+        {
+          "title": "SEO-Optimized Websites",
+          "description": "Boost your search rankings and reach more customers organically."
+        },
+        {
+          "title": "High-Performance Pages",
+          "description": "Fast-loading websites that reduce bounce rates and increase engagement."
+        },
+        {
+          "title": "Progressive Web Apps (PWA)",
+          "description": "App-like experience on any device, offline support, and easy installability."
+        }
+      ]
+    },
+    {
+      "category": "Mobile Solutions",
+      "items": [
+        {
+          "title": "Cross-Platform Apps (iOS & Android)",
+          "description": "Reach your users on any device with fast, reliable, and responsive apps."
+        },
+        {
+          "title": "Push Notifications & App Features",
+          "description": "Engage users directly and keep them coming back to your app."
+        }
+      ]
+    },
+    {
+      "category": "Backend & Integrations",
+      "items": [
+        {
+          "title": "APIs & Database Integration",
+          "description": "Connect your apps to databases, payment gateways, and other services for seamless functionality."
+        },
+        {
+          "title": "Secure Authentication",
+          "description": "Keep your users’ data safe with modern login systems and best security practices."
+        }
+      ]
+    },
+    {
+      "category": "Business Growth Support",
+      "items": [
+        {
+          "title": "Technical Consulting",
+          "description": "Expert advice on the best tech stack and strategies to achieve your business goals."
+        },
+        {
+          "title": "Code Review & Optimization",
+          "description": "Ensure your app is fast, maintainable, and scalable for the long term."
+        },
+        {
+          "title": "Workshops & Training",
+          "description": "Empower your team with web and mobile development skills."
+        }
+      ]
+    }
+  ],
+  "tagline": "We build fast, reliable, and engaging web and mobile solutions that drive growth, increase visibility, and deliver measurable results for your business."
+}

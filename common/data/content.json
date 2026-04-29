@@ -1,0 +1,8 @@
+{
+  "title": "My Awesome Blog",
+  "content": [
+    { "type": "h2", "text": "Introduction" },
+    { "type": "p", "text": "Hello world!" }
+  ],
+  "createdBy": "5f8d0d55b54764421b7156c3"
+}

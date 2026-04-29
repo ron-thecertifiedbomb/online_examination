@@ -1,0 +1,36 @@
+{
+  "name": "Lizard Interactive Online",
+  "version": "1.0.0",
+  "description": "All-in-One Marketing & Dev Hub",
+  "author": "RonDevSolutions",
+  "config": {
+    "theme": {
+      "primaryColor": "#1d4ed8",
+      "darkBg": "#1d4ed8"
+    },
+    "features": {
+      "blog": true,
+      "comments": true,
+      "tools": true,
+      "emulator": true
+    },
+    "api": {
+      "redis": true,
+      "auth0": true
+    }
+  },
+  "models": [
+    {
+      "title": "Gemini 2.5 Flash Lite",
+      "provider": "gemini",
+      "model": "gemini-2.5-flash-lite-latest",
+      "apiKey": "AIzaSyAg1-yfLdo4514L8qdejVN1WYZomptIuFU"
+    }
+  ],
+  "tabAutocompleteModel": {
+    "title": "Gemini Autocomplete",
+    "provider": "gemini",
+    "model": "gemini-2.5-flash-lite-latest",
+    "apiKey": "AIzaSyAg1-yfLdo4514L8qdejVN1WYZomptIuFU"
+  }
+}
