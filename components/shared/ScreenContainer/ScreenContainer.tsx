@@ -33,6 +33,7 @@ export default function ScreenContainer({
             className={`
                 w-full 
                 min-h-screen 
+                pt-30
                 ${variants[variant]} 
                 ${className} 
             `}

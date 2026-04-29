@@ -14,7 +14,7 @@ type Exam = {
 
 export default function TeacherDashboard({ exams }: { exams: Exam[] }) {
     return (
-        <ScreenContainer className="pt-30" >
+        <ScreenContainer >
             <div className="flex justify-between items-end mb-10">
                 <div>
                     <h1 className="text-3xl font-black tracking-tight text-zinc-900">
